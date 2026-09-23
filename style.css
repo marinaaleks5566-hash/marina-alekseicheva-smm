@@ -1667,3 +1667,20 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 
   body.панель-с-переходом .липкая-кнопка { transition: none; }
 }
+
+/* экран 02 */
+#экран-02 .для-кого__шапка { max-width: 760px; margin-bottom: clamp(28px, 5vw, 56px); }
+  #экран-02 .для-кого__сетка { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+  #экран-02 .для-кого__роль { position: relative; min-height: 220px; padding: clamp(24px, 3vw, 38px); border: var(--нить) solid var(--цвет-линия); border-radius: var(--радиус-карточки); overflow: hidden; }
+  #экран-02 .для-кого__роль--главная { grid-column: 1 / -1; min-height: 250px; display: grid; grid-template-columns: minmax(190px, .7fr) 1.3fr; align-items: end; gap: clamp(24px, 5vw, 72px); }
+  #экран-02 .для-кого__номер { display: block; margin-bottom: 22px; color: var(--цвет-акцент); font-size: var(--кегль-кикер); font-weight: 700; }
+  #экран-02 .для-кого__роль h3 { margin: 0; font-size: var(--кегль-лид); line-height: 1.15; }
+  #экран-02 .для-кого__роль p { margin: 18px 0 0; color: var(--цвет-текст-мягкий); font-size: var(--кегль-текст); }
+  #экран-02.светлый .для-кого__роль { background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
+  #экран-02.тёмный .для-кого__роль { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); border-color: var(--цвет-тёплый-мягкий); }
+  #экран-02.тёмный .для-кого__роль p { color: var(--цвет-тёплый-мягкий); }
+  @media (max-width: 899px) {
+    #экран-02 .для-кого__сетка { grid-template-columns: 1fr; }
+    #экран-02 .для-кого__роль--главная { grid-column: auto; grid-template-columns: 1fr; min-height: 0; }
+    #экран-02 .для-кого__роль { min-height: 0; }
+  }
