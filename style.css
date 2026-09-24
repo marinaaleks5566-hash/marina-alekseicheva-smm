@@ -1669,18 +1669,46 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 }
 
 /* экран 02 */
-#экран-02 .для-кого__шапка { max-width: 760px; margin-bottom: clamp(28px, 5vw, 56px); }
-  #экран-02 .для-кого__сетка { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
-  #экран-02 .для-кого__роль { position: relative; min-height: 220px; padding: clamp(24px, 3vw, 38px); border: var(--нить) solid var(--цвет-линия); border-radius: var(--радиус-карточки); overflow: hidden; }
-  #экран-02 .для-кого__роль--главная { grid-column: 1 / -1; min-height: 250px; display: grid; grid-template-columns: minmax(190px, .7fr) 1.3fr; align-items: end; gap: clamp(24px, 5vw, 72px); }
-  #экран-02 .для-кого__номер { display: block; margin-bottom: 22px; color: var(--цвет-акцент); font-size: var(--кегль-кикер); font-weight: 700; }
-  #экран-02 .для-кого__роль h3 { margin: 0; font-size: var(--кегль-лид); line-height: 1.15; }
-  #экран-02 .для-кого__роль p { margin: 18px 0 0; color: var(--цвет-текст-мягкий); font-size: var(--кегль-текст); }
-  #экран-02.светлый .для-кого__роль { background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
-  #экран-02.тёмный .для-кого__роль { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); border-color: var(--цвет-тёплый-мягкий); }
-  #экран-02.тёмный .для-кого__роль p { color: var(--цвет-тёплый-мягкий); }
+#экран-02 { overflow: hidden; }
+  #экран-02 .аудитория__макет { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); grid-template-areas: "шапка фото" "список фото" "итог итог"; column-gap: clamp(44px, 7vw, 96px); row-gap: clamp(36px, 5vw, 64px); align-items: start; }
+  #экран-02 .аудитория__шапка { grid-area: шапка; max-width: 760px; margin: 0; text-align: left; }
+  #экран-02 .аудитория__шапка h2 { max-width: 740px; margin: 0; font-size: var(--кегль-h2); line-height: 1.04; letter-spacing: -.035em; }
+  #экран-02 .аудитория__шапка h2 em { color: var(--цвет-акцент); font-style: normal; }
+  #экран-02 .аудитория__лид { max-width: 660px; margin: 28px 0 0; font-size: var(--кегль-лид); line-height: 1.45; }
+  #экран-02 .аудитория__фото { grid-area: фото; position: relative; margin: 0; align-self: stretch; min-height: 680px; overflow: hidden; border-radius: 0; }
+  #экран-02 .аудитория__фото::after { content: ""; position: absolute; inset: 0; border: var(--нить) solid var(--цвет-акцент); pointer-events: none; }
+  #экран-02 .аудитория__фото img { width: 100%; height: 100%; min-height: 680px; display: block; object-fit: cover; object-position: center; }
+  #экран-02 .аудитория__роли { grid-area: список; display: grid; grid-template-columns: 1.12fr .88fr; gap: 0 clamp(30px, 5vw, 64px); border-top: var(--нить) solid var(--цвет-линия); }
+  #экран-02 .аудитория__роль { position: relative; display: block; margin: 0; padding: 26px 0 26px 24px; background: transparent; border: 0; border-bottom: var(--нить) solid var(--цвет-линия); border-radius: 0; box-shadow: none; }
+  #экран-02 .аудитория__роль::before { content: ""; position: absolute; left: 0; top: 26px; bottom: 26px; width: var(--нить); background: var(--цвет-акцент); }
+  #экран-02 .аудитория__роль--главная { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(220px, .72fr) 1.28fr; gap: 34px; padding-top: 32px; padding-bottom: 32px; }
+  #экран-02 .аудитория__роль:nth-child(4) { grid-column: 1 / -1; width: 74%; margin-left: auto; }
+  #экран-02 .аудитория__роль h3 { margin: 0; font-size: var(--кегль-лид); line-height: 1.2; }
+  #экран-02 .аудитория__роль p { margin: 12px 0 0; color: var(--цвет-текст-мягкий); font-size: var(--кегль-текст); line-height: 1.55; }
+  #экран-02 .аудитория__роль--главная p { margin-top: 0; }
+  #экран-02 .аудитория__итог { grid-area: итог; display: grid; grid-template-columns: 8px minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); max-width: 920px; margin: 0 0 0 auto; padding-top: clamp(28px, 4vw, 48px); border-top: var(--нить) solid var(--цвет-линия); }
+  #экран-02 .аудитория__итог::before { content: ""; background: var(--цвет-акцент); }
+  #экран-02 .аудитория__итог p { margin: 0; font-size: var(--кегль-лид); font-weight: 700; line-height: 1.4; }
+  #экран-02.светлый .аудитория__роль { background: transparent; color: var(--цвет-текст); }
+  #экран-02.тёмный .аудитория__роль { background: transparent; color: var(--цвет-тёмный-текст); }
+  #экран-02.светлый .аудитория__роль p { color: var(--цвет-текст-мягкий); }
+  #экран-02.тёмный .аудитория__роль p { color: var(--цвет-тёплый-мягкий); }
+  #экран-02.светлый .аудитория__фото::after { border-color: var(--цвет-акцент); }
+  #экран-02.тёмный .аудитория__фото::after { border-color: var(--цвет-акцент); }
+  #экран-02.светлый .аудитория__итог { border-color: var(--цвет-линия); }
+  #экран-02.тёмный .аудитория__итог { border-color: var(--цвет-тёплый-мягкий); }
   @media (max-width: 899px) {
-    #экран-02 .для-кого__сетка { grid-template-columns: 1fr; }
-    #экран-02 .для-кого__роль--главная { grid-column: auto; grid-template-columns: 1fr; min-height: 0; }
-    #экран-02 .для-кого__роль { min-height: 0; }
+    #экран-02 .аудитория__макет { grid-template-columns: 1fr; grid-template-areas: "шапка" "фото" "список" "итог"; row-gap: 34px; }
+    #экран-02 .аудитория__шапка h2 { letter-spacing: -.025em; }
+    #экран-02 .аудитория__лид { margin-top: 22px; }
+    #экран-02 .аудитория__фото { width: 100%; min-height: 0; aspect-ratio: 4 / 3; }
+    #экран-02 .аудитория__фото img { min-height: 0; object-position: center 56%; }
+    #экран-02 .аудитория__роли { grid-template-columns: 1fr; }
+    #экран-02 .аудитория__роль, #экран-02 .аудитория__роль--главная { grid-column: auto; display: block; width: auto; margin: 0; padding: 22px 0 22px 20px; }
+    #экран-02 .аудитория__роль:nth-child(2) { width: 88%; }
+    #экран-02 .аудитория__роль:nth-child(3) { width: 90%; margin-left: auto; }
+    #экран-02 .аудитория__роль:nth-child(4) { width: 82%; }
+    #экран-02 .аудитория__роль--главная p { margin-top: 12px; }
+    #экран-02 .аудитория__роль::before { top: 22px; bottom: 22px; }
+    #экран-02 .аудитория__итог { margin: 0; gap: 20px; }
   }
