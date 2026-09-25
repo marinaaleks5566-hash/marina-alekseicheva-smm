@@ -1825,7 +1825,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05 .витрина__подзаголовок { margin: 72px 0 24px; font-size: var(--кегль-цифра); line-height: 1.2; }
   #экран-05 .витрина__прочие { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
   #экран-05 .витрина__работа { min-width: 0; }
-  #экран-05 .витрина__работа figure { width: 100%; aspect-ratio: 9 / 10; margin: 0 0 20px; overflow: hidden; border-radius: var(--радиус-карточки); }
+  #экран-05 .витрина__работа figure { width: 100%; aspect-ratio: 9 / 10; margin: 20px 0 0; overflow: hidden; border-radius: var(--радиус-карточки); }
   #экран-05 .витрина__работа img { display: block; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center top; }
   #экран-05 .витрина__работа--яна figure,
   #экран-05 .витрина__работа--любава figure { position: relative; }
@@ -1833,8 +1833,9 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05 .витрина__работа--любава img { position: absolute; left: -4%; width: 160%; max-width: none; height: auto; object-fit: fill; }
   #экран-05 .витрина__работа--яна img { top: -11%; }
   #экран-05 .витрина__работа--любава img { top: -21%; }
-  #экран-05 .витрина__работа--широкая figure { position: relative; }
-  #экран-05 .витрина__работа--широкая img { position: absolute; top: -18%; left: 50%; width: auto; max-width: none; height: 126%; transform: translateX(-50%); object-fit: fill; }
+  #экран-05 .витрина__работа--широкая { grid-column: 1 / -1; margin-top: 18px; }
+  #экран-05 .витрина__работа--широкая figure { aspect-ratio: 8 / 5; }
+  #экран-05 .витрина__работа--широкая img { width: 100%; height: 100%; object-fit: contain; }
   #экран-05 .витрина__работа h3 { margin: 10px 0 8px; font-size: var(--кегль-лид); line-height: 1.25; }
   #экран-05 .витрина__работа p { margin: 0; font-size: var(--кегль-текст); line-height: 1.45; }
   #экран-05 .витрина__работа small { display: block; margin-top: 15px; padding-top: 13px; border-top: var(--нить) solid; font-size: var(--кегль-текст); line-height: 1.4; }
@@ -1862,17 +1863,16 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-05 .витрина__число { margin-top: 20px; }
     #экран-05 .витрина__подзаголовок { margin-top: 58px; }
     #экран-05 .витрина__прочие { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 14px; }
-    #экран-05 .витрина__работа figure { aspect-ratio: 9 / 10; margin-bottom: 12px; }
+    #экран-05 .витрина__работа figure { aspect-ratio: 9 / 10; margin-top: 14px; }
     #экран-05 .витрина__работа h3 { font-size: var(--кегль-текст); }
     #экран-05 .витрина__работа p { font-size: var(--кегль-текст); }
     #экран-05 .витрина__работа small { font-size: var(--кегль-мелкий); }
-    #экран-05 .витрина__работа--широкая { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px; align-items: center; }
-    #экран-05 .витрина__работа--широкая figure { aspect-ratio: 4 / 3; margin: 0; }
+    #экран-05 .витрина__работа--широкая { display: block; }
+    #экран-05 .витрина__работа--широкая figure { aspect-ratio: 8 / 5; }
   }
   @media (max-width: 500px) {
     #экран-05 .витрина__кадр { height: 210px; }
-    #экран-05 .витрина__работа--широкая { display: block; }
-    #экран-05 .витрина__работа--широкая figure { aspect-ratio: 16 / 9; margin-bottom: 14px; }
+    #экран-05 .витрина__работа--широкая figure { aspect-ratio: 8 / 5; }
   }
 
 /* экран 06 */
@@ -1909,20 +1909,23 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-07 .контакты__шапка h2 { margin: 0; font-size: var(--кегль-h2); line-height: 1.06; }
   #экран-07 .контакты__шапка .секция__лид { margin: 22px 0 0; font-size: var(--кегль-лид); line-height: 1.45; }
   #экран-07 .контакты__сетка { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr); gap: clamp(28px, 5vw, 70px); align-items: start; }
-  #экран-07 .контакты__список { display: grid; border-top: var(--нить) solid; }
-  #экран-07 .контакты__строка { display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 18px; align-items: center; padding: 24px 0; border-bottom: var(--нить) solid; }
-  #экран-07 .контакты__значок { display: grid; place-items: center; width: 46px; height: 46px; border: var(--нить) solid; border-radius: 50%; font-size: var(--кегль-текст); font-weight: 700; }
-  #экран-07 .контакты__строка strong { display: block; margin-bottom: 5px; font-size: var(--кегль-лид); }
-  #экран-07 .контакты__строка a { overflow-wrap: anywhere; font-size: var(--кегль-текст); text-underline-offset: .2em; }
+  #экран-07 .контакты__список { display: grid; gap: 14px; }
+  #экран-07 .контакты__способ { display: grid; grid-template-columns: 46px minmax(0, 1fr) 24px; gap: 18px; align-items: center; min-height: 88px; padding: 17px 22px; border: var(--нить) solid; border-radius: var(--радиус-карточки); text-decoration: none; transition: transform var(--длительность) var(--плавность), border-color var(--длительность) var(--плавность); }
+  #экран-07 .контакты__способ:hover, #экран-07 .контакты__способ:focus-visible { transform: translateY(-2px); border-color: var(--цвет-акцент); }
+  #экран-07 .контакты__значок { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
+  #экран-07 .контакты__значок svg, #экран-07 .контакты__стрелка svg { width: 22px; height: 22px; }
+  #экран-07 .контакты__значок .иконка { color: var(--цвет-на-акценте); }
+  #экран-07 .контакты__подпись { min-width: 0; }
+  #экран-07 .контакты__подпись strong { display: block; margin-bottom: 5px; font-size: var(--кегль-лид); line-height: 1.2; }
+  #экран-07 .контакты__адрес { display: block; overflow-wrap: anywhere; font-size: var(--кегль-текст); line-height: 1.4; }
+  #экран-07 .контакты__стрелка { color: var(--цвет-акцент); }
   #экран-07 .контакты__приглашение { padding: clamp(28px, 4vw, 46px); border: var(--нить) solid; border-radius: var(--радиус-карточки); }
   #экран-07 .контакты__приглашение h3 { margin: 0; font-size: var(--кегль-лид); line-height: 1.25; }
-  #экран-07 .контакты__приглашение p { margin: 18px 0 28px; font-size: var(--кегль-текст); line-height: 1.55; }
-  #экран-07 .контакты__приглашение .кнопка { width: 100%; min-height: 78px; justify-content: center; padding: 23px 42px; }
-  #экран-07.светлый .контакты__список, #экран-07.светлый .контакты__строка, #экран-07.светлый .контакты__значок { border-color: var(--цвет-линия); }
-  #экран-07.тёмный .контакты__список, #экран-07.тёмный .контакты__строка, #экран-07.тёмный .контакты__значок { border-color: var(--цвет-тёплый-мягкий); }
-  #экран-07.светлый .контакты__значок { color: var(--цвет-акцент); }
-  #экран-07.тёмный .контакты__значок { color: var(--цвет-акцент-яркий); }
+  #экран-07 .контакты__приглашение p { margin: 18px 0 0; font-size: var(--кегль-текст); line-height: 1.55; }
+  #экран-07.светлый .контакты__способ, #экран-07.тёмный .контакты__способ { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
+  #экран-07.светлый .контакты__способ:hover, #экран-07.тёмный .контакты__способ:hover, #экран-07.светлый .контакты__способ:focus-visible, #экран-07.тёмный .контакты__способ:focus-visible { border-color: var(--цвет-акцент); }
+  #экран-07.светлый .контакты__адрес, #экран-07.тёмный .контакты__адрес { color: var(--цвет-текст-мягкий); }
   #экран-07.светлый .контакты__приглашение { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-07.тёмный .контакты__приглашение { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-07.тёмный .контакты__приглашение h3, #экран-07.тёмный .контакты__приглашение p { color: var(--цвет-текст); }
-  @media (max-width: 899px) { #экран-07 .контакты__сетка { grid-template-columns: 1fr; } }
+  #экран-07.тёмный .контакты__приглашение { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); border-color: var(--цвет-тёплый-мягкий); }
+  #экран-07.тёмный .контакты__приглашение h3, #экран-07.тёмный .контакты__приглашение p { color: var(--цвет-тёмный-текст); }
+  @media (max-width: 899px) { #экран-07 .контакты__сетка { grid-template-columns: 1fr; } #экран-07 .контакты__способ { grid-template-columns: 42px minmax(0, 1fr) 20px; gap: 14px; padding: 16px; } #экран-07 .контакты__значок { width: 42px; height: 42px; } }
