@@ -1911,3 +1911,32 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-05 .витрина__работа--широкая { display: block; }
     #экран-05 .витрина__работа--широкая figure { aspect-ratio: 16 / 9; margin-bottom: 14px; }
   }
+
+/* экран 06 */
+#экран-06 { overflow: hidden; }
+  #экран-06 .отзывы__макет { display: grid; grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr); gap: clamp(48px, 8vw, 112px); align-items: start; }
+  #экран-06 .отзывы__шапка { position: sticky; top: 40px; max-width: 410px; margin: 0; text-align: left; }
+  #экран-06 .отзывы__шапка h2 { margin: 14px 0 24px; font-size: var(--кегль-h2); line-height: 1.08; letter-spacing: -.035em; }
+  #экран-06 .отзывы__шапка h2 em { color: var(--цвет-акцент); font-style: normal; }
+  #экран-06 .отзывы__лид { margin: 0; font-size: var(--кегль-лид); line-height: 1.5; }
+  #экран-06 .отзывы__лента { columns: 2; column-gap: clamp(18px, 2.4vw, 32px); }
+  #экран-06 .отзывы__цитата { position: relative; display: inline-block; width: 100%; margin: 0 0 clamp(18px, 2.4vw, 32px); padding: clamp(24px, 3vw, 36px); break-inside: avoid; border: var(--нить) solid; border-radius: var(--радиус-карточки); box-shadow: none; }
+  #экран-06 .отзывы__цитата::before { content: "“"; display: block; height: 34px; margin-bottom: 16px; color: var(--цвет-акцент); font-size: var(--кегль-h2); font-weight: 700; line-height: .9; }
+  #экран-06 .отзывы__текст { margin: 0; font-size: var(--кегль-текст); line-height: 1.58; }
+  #экран-06 .отзывы__подпись { display: block; margin-top: 26px; padding-top: 18px; border-top: var(--нить) solid; font-size: var(--кегль-текст); line-height: 1.35; }
+  #экран-06 .отзывы__подпись b { font-weight: 700; }
+  #экран-06.светлый .отзывы__цитата { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
+  #экран-06.тёмный .отзывы__цитата { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); border-color: var(--цвет-тёплый-мягкий); }
+  #экран-06.светлый .отзывы__лид { color: var(--цвет-текст-мягкий); }
+  #экран-06.тёмный .отзывы__лид { color: var(--цвет-тёплый-мягкий); }
+  #экран-06.светлый .отзывы__подпись { color: var(--цвет-текст-мягкий); border-color: var(--цвет-линия); }
+  #экран-06.тёмный .отзывы__подпись { color: var(--цвет-тёплый-мягкий); border-color: var(--цвет-тёплый-мягкий); }
+  @media (max-width: 899px) {
+    #экран-06 .отзывы__макет { grid-template-columns: 1fr; gap: 36px; }
+    #экран-06 .отзывы__шапка { position: static; max-width: 680px; }
+    #экран-06 .отзывы__шапка h2 { letter-spacing: -.025em; }
+    #экран-06 .отзывы__лента { columns: 1; }
+    #экран-06 .отзывы__цитата { display: block; padding: 24px; }
+    #экран-06 .отзывы__текст { font-size: var(--кегль-текст); }
+    #экран-06[data-в-поле="да"] ~ .липкая-кнопка { display: none; }
+  }
