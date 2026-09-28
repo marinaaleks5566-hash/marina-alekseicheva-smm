@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="utf-8">
@@ -9,696 +9,13 @@
 <meta property="og:title" content="Марина Алексейчева — SMM и нейроконтент для бизнеса">
 <meta property="og:description" content="Марина Алексейчева — SMM и нейроконтент для бизнеса">
 <meta property="og:type" content="website">
-<style data-critical="site">
-
-body { font: var(--кегль-текст)/1.6 var(--шрифт-текста); color: var(--цвет-текст);
-       background: var(--цвет-фон); margin: 0; -webkit-font-smoothing: antialiased; }
-h1 { font-size: var(--кегль-h1); font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; }
-h2 { font-size: var(--кегль-h2); font-weight: 700; line-height: 1.12; letter-spacing: -0.015em; }
-.лид { font-size: var(--кегль-лид, var(--кегль-текст)); line-height: 1.55; color: var(--цвет-текст-мягкий); }  .акцент { font-style: normal; color: var(--цвет-акцент); }
-.блок { padding: var(--отступ-секции) 0; position: relative; overflow: hidden; }
-.блок__внутри { width: min(100% - 2 * var(--отступ-блока), var(--ширина)); margin: 0 auto; position: relative; }
-
-.тёмный { background: linear-gradient(160deg, var(--фон-ключа, var(--цвет-тёмный-фон)), var(--фон-2-ключа, var(--цвет-тёмный-фон)) 70%, var(--фон-ключа, var(--цвет-тёмный-фон)));
-  background-color: var(--фон-ключа, var(--цвет-тёмный-фон)); color: var(--текст-ключа, var(--цвет-тёмный-текст)); }
-
-*, *::before, *::after { box-sizing: border-box; }
-img { max-width: 100%; height: auto; }
-[hidden] { display: none !important; }
-
-p, li, h1, h2, h3, blockquote { overflow-wrap: break-word; }
-h1, h2, h3 { font-family: var(--шрифт-заголовков); margin: 0 0 .5em; }
-h3 { font-size: calc(var(--кегль-текст) * 1.25); font-weight: 700; line-height: 1.25; }
-p, ul { margin: 0 0 1em; }  ul { padding-left: 1.25em; }
-.лид { max-width: calc(var(--ширина-колонки) * .95); margin-bottom: 1.2em; }
-a { color: var(--цвет-акцент); text-underline-offset: .15em; }
-
-.блок__внутри { z-index: 1; }  .блок__внутри > :last-child { margin-bottom: 0; }
-.светлый { background: var(--цвет-фон); color: var(--цвет-текст); }  .светлый.второй { background: var(--цвет-фон-2); }
-
-body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-ключа: var(--цвет-фон-2, var(--цвет-фон)); --текст-ключа: var(--цвет-текст); --подложка-ключа: transparent;
-  --вуаль-ключа: var(--фон-ключа); --тёплый-ключа: var(--цвет-тёплый-тёмный, var(--цвет-акцент-тёмный));
-  --глубина-ключа: var(--цвет-тёплый-мягкий, var(--цвет-тёплый, var(--цвет-линия))); --тепло-ключа: color-mix(in srgb, var(--цвет-тёплый-мягкий, var(--цвет-тёплый, var(--цвет-линия))) 40%, transparent); }
-.светлый.второй { --фон-ключа: var(--цвет-фон-2); --фон-2-ключа: var(--цвет-фон); }  .тёмный.второй { --фон-ключа: var(--цвет-тёмный-фон-2, var(--цвет-тёмный-фон)); --фон-2-ключа: var(--цвет-тёмный-фон); }
-.тёмный { --фон-ключа: var(--цвет-тёмный-фон); --фон-2-ключа: var(--цвет-тёмный-фон-2, var(--цвет-тёмный-фон)); --текст-ключа: var(--цвет-тёмный-текст);
-  --вуаль-ключа: var(--фон-ключа); --тёплый-ключа: var(--цвет-тёплый, var(--цвет-акцент-тёмный)); --глубина-ключа: var(--цвет-акцент); --тепло-ключа: transparent;
-  --подложка-ключа: color-mix(in srgb, var(--цвет-тёплый, var(--цвет-акцент-тёмный)) 12%, transparent); }
-
-.тёмный h1, .тёмный h2, .тёмный h3 { color: var(--текст-ключа, var(--цвет-тёмный-текст)); }
-.тёмный .лид,
-.тёмный .фото figcaption { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) var(--мягкость-текста, 72%), transparent); }
-
-.тёмный a:not(.кнопка) { color: var(--цвет-тёмный-текст); text-decoration-color: var(--цвет-акцент); }
-
-.тёмный .акцент { color: var(--цвет-акцент-яркий, var(--цвет-акцент)); }
-.тёмный .иконка { color: var(--цвет-акцент); }
-.тёмный :focus-visible, .тёмный .кнопка:focus-visible { outline-color: var(--цвет-тёмный-текст); }
-
-.кнопка { background: var(--цвет-кнопки, var(--цвет-акцент)); color: var(--цвет-на-кнопке, var(--цвет-на-акценте)); }
-.кнопка:hover { background: var(--цвет-кнопки-навёл, var(--цвет-акцент-тёмный)); }
-.кнопка:focus-visible { outline: 2px solid var(--цвет-кнопки, var(--цвет-акцент)); outline-offset: 3px; }
-
-.кнопка { display: inline-flex; align-items: center; justify-content: center; gap: .5em;
-  min-height: 3em; padding: .8em 1.6em; border-radius: var(--кнопка-радиус);
-  font: 600 var(--кегль-текст)/1.2 var(--шрифт-текста); text-decoration: none; cursor: pointer;
-  border: 1px solid transparent; transition: transform var(--длительность) var(--плавность),
-  box-shadow var(--длительность) var(--плавность); }
-.кнопка--главная { background: var(--цвет-кнопки, var(--цвет-акцент)); color: var(--цвет-на-кнопке, var(--цвет-на-акценте)); box-shadow: var(--тень-глубокая); }
-.кнопка--главная:hover { transform: translateY(-2px); background: var(--цвет-кнопки-навёл, var(--цвет-акцент-тёмный)); }
-
-.тёмный .кнопка--главная { background: var(--цвет-кнопки, var(--цвет-акцент)); color: var(--цвет-на-кнопке, var(--цвет-на-акценте));
-  border-color: color-mix(in srgb, var(--цвет-тёмный-текст) 30%, transparent); }
-.тёмный .кнопка--главная:hover { background: var(--цвет-кнопки-навёл, var(--цвет-акцент-тёмный)); }
-.кнопка:active { transform: translateY(0); }
-
-.первый-экран__действие .кнопка--главная, .липкая-кнопка .кнопка--главная { animation: пульс-кнопки 2.4s ease-out infinite; }
-.первый-экран__действие .кнопка--главная:hover, .липкая-кнопка .кнопка--главная:hover { animation: none; }
-.кнопка .иконка { color: inherit; width: 1.2em; height: 1.2em; }
-
-.кикер { display: inline-flex; align-items: center; gap: .5em; margin-bottom: var(--отступ-блока);
-  padding: .5625em .875em; border-radius: 9em; white-space: nowrap;
-  font: 600 var(--кегль-кикер)/1 var(--шрифт-текста); letter-spacing: var(--разрядка-кикера);
-  background: var(--цвет-тёмный-фон); color: var(--цвет-тёмный-текст); }
-.кикер .иконка, .кикер svg { width: 1em; height: 1em; flex: none; color: var(--цвет-тёплый, currentColor); }
-.тёмный .кикер { background: transparent; padding: 0; border: 0; letter-spacing: .06em;
-  color: var(--тёплый-ключа, var(--цвет-акцент-тёмный)); }
-
-.тёмный .кикер::before { content: ""; flex: none; width: 2em; height: 2px; border-radius: 2px;
-  background: var(--тёплый-ключа, var(--цвет-акцент-тёмный)); }
-
-.тёмный .кикер--пилюля { padding: .5625em .875em; letter-spacing: var(--разрядка-кикера);
-  background: var(--подложка-ключа, transparent);
-  border: 1px solid color-mix(in srgb, var(--тёплый-ключа, var(--цвет-акцент-тёмный)) 35%, transparent); }
-.тёмный .кикер--пилюля::before { display: none; }
-
-.шапка { height: 3.5rem; display: flex; align-items: center; justify-content: space-between; gap: .625em;
-  padding: 0 1em; position: relative; z-index: 6; border-bottom: 1px solid var(--цвет-линия); background: transparent; }
-
-.шапка__лого { display: flex; align-items: center; gap: .5em; font: 700 .9375em/1 var(--шрифт-заголовков); white-space: nowrap; color: inherit; text-decoration: none; }
-.шапка__лого img { width: 1.875em; height: 1.875em; border-radius: 50%; flex: none;
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--цвет-тёплый, var(--цвет-акцент-тёмный)) 45%, transparent); }
-
-.шапка__лиц { font-size: .8125em; line-height: 1.2; display: flex; align-items: center; justify-content: flex-end;
-  gap: .3125rem; text-align: right; max-width: 9.375rem; opacity: .85; }
-.шапка__лиц svg, .шапка__лиц .иконка { width: .875rem; height: .875rem; flex: none; }
-.тёмный .шапка { background: transparent; border-bottom-color: transparent; color: var(--цвет-тёмный-текст); }
-
-.карточки { display: grid; gap: var(--отступ-блока); }
-.карточка { padding: calc(var(--отступ-блока) * 1.25); border-radius: var(--радиус-карточки, var(--радиус));
-  background: var(--цвет-фон-карточки); border: 1px solid var(--цвет-линия); box-shadow: var(--тень);
-  transition: transform var(--длительность) var(--плавность), box-shadow var(--длительность) var(--плавность); }
-.карточка:hover { transform: translateY(-3px); box-shadow: var(--тень-чип, var(--тень)); }
-.карточки { margin-top: var(--отступ-блока); padding: 0; list-style: none; }
-.карточка { position: relative; min-width: 0; }
-.карточка > :last-child { margin-bottom: 0; }  .карточка h3 { margin-top: 0; }
-.карточка > .иконка { width: 2em; height: 2em; margin-bottom: .8em; }
-
-.тёмный .карточка:not(.карточка--стекло) { background: color-mix(in srgb, var(--цвет-тёмный-текст) 6%, transparent);
-  border-color: color-mix(in srgb, var(--цвет-тёмный-текст) 14%, transparent); }
-
-.цифры { display: grid; grid-template-columns: repeat(auto-fit, minmax(5em, 1fr)); gap: var(--отступ-блока); margin: var(--отступ-блока) 0 0; padding: 0; list-style: none; }
-.цифра { padding-left: 1em; border-left: 1px solid color-mix(in srgb, currentColor 25%, transparent); }
-.цифра__значение { display: block; font: 700 var(--кегль-цифра)/1 var(--шрифт-заголовков);
-  letter-spacing: -0.02em; color: var(--цвет-текст); }
-.тёмный .цифра__значение { color: var(--цвет-тёмный-текст); }  .цифра__подпись { display: block; margin-top: .35em; font-size: var(--кегль-мелкий); opacity: .8; }
-
-.цифра { flex: 1 1 5em; min-width: 0; padding-left: .7em; }
-
-.цифра.карточка { padding: var(--отступ-блока) .75em; border-left: 1px solid var(--цвет-линия); text-align: center; }
-.карточка .цифра__значение { font-size: calc(var(--кегль-цифра) * .78); }
-
-.фото { margin: 0; border-radius: var(--радиус); overflow: hidden; box-shadow: var(--тень); }
-.фото img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
-.фото figcaption { padding: .7em 1em; font-size: var(--кегль-мелкий); color: var(--цвет-текст-мягкий); }
-.аватар { width: 3.5em; height: 3.5em; border-radius: 50%; object-fit: cover; flex: none;
-  border: 2px solid var(--цвет-фон-карточки); box-shadow: var(--тень); }
-
-.иконка { width: 1.5em; height: 1.5em; flex: none; color: var(--цвет-акцент); vertical-align: middle; }
-.иконка svg { display: block; width: 100%; height: 100%; }
-.список-иконок { display: grid; gap: .65em; margin: 0 0 1.2em; padding: 0; list-style: none; }
-.список-иконок li { display: flex; align-items: flex-start; gap: .65em; }
-.список-иконок .иконка { margin-top: .15em; }
-
-.список-иконок .иконка { color: var(--цвет-тёплый-тёмный, var(--цвет-акцент-тёмный)); }
-.тёмный .список-иконок .иконка { color: var(--тёплый-ключа, var(--цвет-акцент-тёмный)); }
-
-.блок--первый-экран h1 .хвост { display: block; margin-top: .4em; font-size: .66em; font-weight: 600; line-height: 1.28; letter-spacing: 0; }
-
-.пятно { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(2.5em);
-  animation: дрейф 28s ease-in-out infinite alternate;
-  background: color-mix(in srgb, var(--цвет-тёплый-мягкий, var(--цвет-линия)) 55%, transparent); }
-.тёмный .пятно { background: color-mix(in srgb, var(--цвет-акцент) 70%, transparent); }
-.фон--зерно::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .12;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
-
-.липкая-кнопка { display: none; }
-@media (max-width: 600px) {
-  .липкая-кнопка { display: block; position: fixed; inset: auto 0 0; z-index: 90;
-    padding: .6em 1em calc(.6em + env(safe-area-inset-bottom));
-    background: color-mix(in srgb, var(--цвет-фон) 88%, transparent);
-    backdrop-filter: blur(.6em); -webkit-backdrop-filter: blur(.6em); border-top: 1px solid var(--цвет-линия); }
-
-  .липкая-кнопка--тёмная { background: color-mix(in srgb, var(--цвет-тёмный-фон) 88%, transparent);
-    border-top-color: color-mix(in srgb, var(--цвет-тёмный-текст) 12%, transparent); }
-  .липкая-кнопка .кнопка { width: 100%; min-height: 3.375rem; font-size: 1rem; }
-
-  body.с-липкой-кнопкой { padding-bottom: calc(5em + env(safe-area-inset-bottom)); }
-}
-
-@media (min-width: 600px) {
-  .карточки { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
-@media (min-width: 900px) {
-  .карточки { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .цифры { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .блок--первый-экран h1 .хвост { display: inline; margin-top: 0; font-size: 1em; line-height: inherit; }
-  .шапка { padding: 0 3.5em; gap: .75em; }
-  .шапка__лого { font-size: 1em; gap: .625em; }  .шапка__лого img { width: 2em; height: 2em; }
-  .шапка__лиц { max-width: none; }
-}
-
-@keyframes пульс-кнопки {
-  0%   { box-shadow: var(--тень-глубокая), 0 0 0 0 color-mix(in srgb, var(--цвет-акцент) 45%, transparent); }
-  70%  { box-shadow: var(--тень-глубокая), 0 0 0 .8em color-mix(in srgb, var(--цвет-акцент) 0%, transparent); }
-  100% { box-shadow: var(--тень-глубокая), 0 0 0 0 color-mix(in srgb, var(--цвет-акцент) 0%, transparent); }
-}
-@keyframes вращение { to { rotate: 360deg; } }
-@keyframes парение { 50% { transform: translateY(-.5em); } }
-@keyframes дрейф { 0% { translate: 0 0; scale: 1; } 50% { translate: 4% -5%; scale: 1.08; } 100% { translate: -3% 4%; scale: .96; } }
-@keyframes мерцание { 50% { opacity: .3; } }
-@keyframes дыхание { 50% { transform: translateY(-.5em); } }
-@keyframes бег { to { transform: translateX(-50%); } }
-@keyframes зум { to { scale: 1.06; } }
-@keyframes дрейф-ленты { to { transform: translateX(-50%); } }
-
-@media (prefers-reduced-motion: reduce) {  .кнопка, .карточка { transition: none; }
-  .кнопка--главная:hover, .карточка:hover { transform: none; }
-  .первый-экран__действие .кнопка--главная, .липкая-кнопка .кнопка--главная { animation: none; }
-   .пятно { animation: none; }
-}
-
-.блок--тихо { padding-block: var(--отступ-секции-тихо, calc(var(--отступ-секции) * .78)); }
-
-.секция__шапка { position: relative; z-index: 2; display: grid; justify-items: start; gap: .875rem;
-  max-width: 45rem; margin-bottom: 2rem; }
-.секция__шапка > * { margin-bottom: 0; }
-.секция__лид { max-width: 37.5rem; margin-bottom: 0; }
-
-.секция__шапка .цифры { justify-self: stretch; margin-top: 0; }
-.секция__шапка .цифры .цифра:first-child { padding-left: 0; border-left: 0; }
-.светлый .секция__лид { color: var(--цвет-текст-мягкий); }
-.тёмный .секция__лид { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 75%, transparent); }
-
-.роль { border-radius: var(--радиус-карточки, var(--радиус)); padding: 1.25rem; }
-.роль b { display: block; font-family: var(--шрифт-заголовков); font-weight: 700;
-  font-size: var(--кегль-текст); margin-bottom: .5rem; }
-.роль p { font-size: var(--кегль-текст); line-height: 1.6; margin-bottom: 0; }
-.светлый .роль { background: var(--цвет-фон-карточки); border: 1px solid var(--цвет-линия); box-shadow: var(--тень); }
-.светлый .роль b { color: var(--цвет-акцент); }
-.светлый .роль p { color: var(--цвет-текст-мягкий); }
-.тёмный .роль { background: color-mix(in srgb, var(--цвет-тёмный-фон) 55%, transparent);
-  border: 1px solid color-mix(in srgb, var(--цвет-тёплый, var(--цвет-акцент-тёмный)) 22%, transparent); }
-.тёмный .роль b { color: var(--тёплый-ключа, var(--цвет-акцент-тёмный)); }
-.тёмный .роль p { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 82%, transparent); }
-
-.лента { position: relative; z-index: 2; display: grid; gap: 1rem; }
-
-.тариф { position: relative; display: grid; gap: 1rem; padding: 1.625rem 1.5rem;
-  border-radius: var(--радиус-карточки, var(--радиус)); }
-.тариф > * { margin-bottom: 0; }
-.тариф .кнопка { margin-top: .25rem; }
-.светлый .тариф { background: var(--цвет-фон-карточки); --кромка-плиты: var(--цвет-линия);
-  border-inline: 1px solid var(--цвет-линия); border-block-end: 1px solid var(--цвет-линия);
-  box-shadow: 0 1rem 2.5rem color-mix(in srgb, var(--цвет-тёмный-фон) 8%, transparent); }
-.тёмный .тариф { background: color-mix(in srgb, var(--цвет-тёмный-фон) 72%, transparent);
-  --кромка-плиты: color-mix(in srgb, var(--цвет-тёплый, var(--цвет-акцент-тёмный)) 26%, transparent);
-  border-inline: 1px solid var(--кромка-плиты); border-block-end: 1px solid var(--кромка-плиты);
-  box-shadow: var(--тень-глубокая); }
-
- .тариф {
-  border-block-start: 1px solid var(--кромка-плиты, transparent); }
-
-@media (min-width: 900px) {
-  .секция__шапка { margin-bottom: 3rem; }
-  .роль p { font-size: calc(var(--кегль-мелкий) * 1.12); }
-
-  .лента { grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: .875rem; }
-}
-
-.блок--о-себе .пятно { width: 28.75rem; height: 28.75rem; right: -10rem; bottom: -10rem; }
-.тёмный.блок--о-себе .пятно { background: color-mix(in srgb, var(--цвет-тёплый, var(--цвет-акцент-тёмный)) 18%, transparent); }
-.светлый.блок--о-себе .пятно { background: color-mix(in srgb, var(--цвет-тёплый-мягкий, var(--цвет-линия)) 55%, transparent); }
-
-.светлый.блок--работы { background: linear-gradient(170deg, var(--фон-ключа, var(--цвет-фон)), var(--фон-2-ключа, var(--цвет-фон-2)) 85%); }
-
-.действие-секции { position: relative; z-index: 2; display: grid; }
- .светлый.блок--прайс-лист { background: linear-gradient(180deg, var(--фон-ключа, var(--цвет-фон)), var(--фон-2-ключа, var(--цвет-фон-2))); }
- .блок--прайс-лист .пятно { width: 37.5rem; height: 37.5rem; left: calc(50% - 18.75rem); top: -16.25rem; }
- .светлый.блок--прайс-лист .пятно { background: color-mix(in srgb, var(--цвет-тёплый-мягкий, var(--цвет-линия)) 35%, transparent); }
- .тёмный.блок--прайс-лист .пятно { background: color-mix(in srgb, var(--цвет-акцент) 28%, transparent); }
-
-@media (min-width: 900px) {
-  .действие-секции { justify-items: center; }
-}
-
-@keyframes зум-финала { from { scale: 1.04; } to { scale: 1; } }
-
-.блок--первый-экран { padding-top: 0; padding-bottom: calc(var(--отступ-секции) * .7); }
-
-.блок--первый-экран.светлый[data-ключ-макета="тёмная"] {
-  background-image: radial-gradient(115% 78% at 76% 28%, var(--тепло-ключа, transparent), transparent 68%),
-    linear-gradient(160deg, var(--фон-ключа, var(--цвет-фон)), var(--фон-2-ключа, var(--цвет-фон)) 70%, var(--фон-ключа, var(--цвет-фон))); }
-.блок--первый-экран .блок__внутри { padding-top: calc(var(--отступ-секции) * .6); }
-
-.блок--первый-экран .кикер { margin-bottom: calc(var(--отступ-блока) * .6); }  .блок--первый-экран h1 { margin-bottom: .35em; text-wrap: balance; overflow-wrap: normal; word-break: normal; }
-
-@media (max-width: 899px) {
-  .блок--первый-экран.тёмный h1 .хвост { font-size: max(.66em, 1.5rem); line-height: 1.16; margin-top: .36em; }
-}
-.блок--первый-экран .лид { line-height: 1.4; margin-bottom: .9em; }
-.блок--первый-экран .список-иконок { gap: .45em; margin-bottom: .9em; }
-.блок--первый-экран .первый-экран__доверие, .блок--первый-экран .первый-экран__когда { margin-bottom: .6em; }
-
-.первый-экран__доверие, .первый-экран__когда { font-size: var(--кегль-текст); }
-@media (min-width: 900px) {
-  .первый-экран__доверие, .первый-экран__когда { font-size: var(--кегль-мелкий); }
-}
-.блок--первый-экран .цифры { margin-top: calc(var(--отступ-блока) * .75); }
-.первый-экран__текст { position: relative; z-index: 1; }  .первый-экран__текст > :last-child { margin-bottom: 0; }
-.первый-экран__действие { display: flex; flex-wrap: wrap; align-items: center; gap: .75em; margin: calc(var(--отступ-блока) * .8) 0 .75em; }
-.первый-экран__действие .кнопка { flex: 1 1 auto; }
-
-@media (max-width: 899px) {
-  .первый-экран__действие { flex-direction: column; align-items: stretch; gap: .375em; }
-}
-
-.первый-экран__доверие, .первый-экран__когда { display: flex; align-items: center; gap: .5em; }
-
-.картинка { margin: 0; position: relative; }
-.картинка img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
-.первый-экран__картинка { margin-top: var(--отступ-блока); }
-.картинка--фото { aspect-ratio: 3 / 4; border-radius: var(--радиус); overflow: hidden; box-shadow: var(--тень); }
-.картинка--край { border-radius: 0; box-shadow: none; overflow: visible; }
-.картинка--край img { mask-image: linear-gradient(to bottom, black 68%, transparent 96%); -webkit-mask-image: linear-gradient(to bottom, black 68%, transparent 96%); }
-
-.первый-экран--разворот .блок__внутри { display: grid; gap: 0; }
-.первый-экран--разворот .первый-экран__картинка { order: -1; position: relative; aspect-ratio: 4 / 5;
-  margin: calc(-.6 * var(--отступ-секции)) calc(-1 * var(--отступ-блока)) -3em; overflow: visible; }
-
-.первый-экран--разворот .первый-экран__картинка.картинка--край { border-radius: 0; }
-.первый-экран--разворот .первый-экран__картинка.картинка--край img { mask-image: linear-gradient(to bottom, black 52%, transparent); -webkit-mask-image: linear-gradient(to bottom, black 52%, transparent); object-position: 50% 0; }
-
-@media (max-width: 899px) {
-
-  .первый-экран--разворот .первый-экран__текст { display: flex; flex-direction: column; gap: calc(var(--отступ-блока) * .875); }
-  .первый-экран--разворот .первый-экран__текст > * { margin-block: 0; }
-  .первый-экран--разворот .первый-экран__текст .список-иконок { order: 10; margin-top: .625em; }  .первый-экран--разворот .первый-экран__текст .цифры { order: 11; }
-  .первый-экран--разворот .первый-экран__картинка { margin-bottom: -5.25em; }
-}
-
-@media (max-width: 600px) {
-  body.с-липкой-кнопкой .блок--первый-экран { padding-bottom: calc(var(--отступ-секции) * .7 + 5em + env(safe-area-inset-bottom)); }
-
-  body.главная-на-виду .липкая-кнопка { transform: translateY(100%); opacity: 0; pointer-events: none; }
-  body.панель-с-переходом .липкая-кнопка { transition: transform var(--длительность) var(--плавность), opacity var(--длительность) var(--плавность); }
-}
-
-@media (min-width: 900px) {
-  .блок--первый-экран .список-иконок { gap: .65em; }
-  .первый-экран__действие .кнопка { flex: 0 0 auto; }
-  .первый-экран__картинка { margin-top: 0; }
-  .первый-экран--разворот .блок__внутри { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
-    gap: calc(var(--отступ-блока) * 2.5); align-items: center; }
-
-  .первый-экран--разворот .список-иконок { font-size: calc(var(--кегль-текст) * .8); }
-  .первый-экран--разворот .блок__внутри { align-items: stretch; }
-
-  .первый-экран--разворот .первый-экран__текст { display: grid; align-content: center;
-    gap: calc(var(--отступ-блока) * .5625); }
-  .первый-экран--разворот .первый-экран__текст > * { margin-block: 0; }
-  .первый-экран--разворот .кикер { justify-self: start; }
-
-  .первый-экран--разворот .блок__внутри { width: calc(100% - 2 * var(--отступ-блока));
-    grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr); }
-
-  .первый-экран--разворот .первый-экран__картинка { order: 0; aspect-ratio: auto; min-height: 100%;
-    margin: calc(-.6 * var(--отступ-секции)) calc(-1 * var(--отступ-блока)) calc(-.7 * var(--отступ-секции)) 0; }
-
-  .первый-экран--разворот .первый-экран__картинка.картинка--край img { position: absolute; inset: 0; object-position: 50% 12%;
-    mask-image: linear-gradient(to bottom, transparent 0, black 9%, black 82%, transparent 100%),
-                linear-gradient(to right, transparent 0, black 16%, black 86%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 9%, black 82%, transparent 100%),
-                linear-gradient(to right, transparent 0, black 16%, black 86%, transparent 100%);
-    mask-composite: intersect; -webkit-mask-composite: source-in; }
-
-}
-
-.первый-экран--разворот .пятно--1 { width: 32.5em; height: 32.5em; left: -10em; top: -7.5em; }
-.первый-экран--разворот .пятно--2 { width: 40em; height: 40em; right: -7.5em; bottom: -12.5em;
-  background: var(--цвет-фон-2); animation-duration: 34s; animation-delay: -12s; }
-
-@media (prefers-reduced-motion: reduce) {
-
-  body.панель-с-переходом .липкая-кнопка { transition: none; }
-}
-
-/* экран 02 */
-#экран-02 { overflow: hidden; padding-top: clamp(24px, 3vw, 44px); }
-  #экран-02 .аудитория__макет { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); grid-template-areas: "шапка фото" "список фото" "итог итог"; column-gap: clamp(44px, 7vw, 96px); row-gap: clamp(36px, 5vw, 64px); align-items: start; }
-  #экран-02 .аудитория__шапка { grid-area: шапка; max-width: 760px; margin: 0; text-align: left; }
-  #экран-02 .аудитория__шапка h2 { max-width: 740px; margin: 0; font-size: var(--кегль-h2); line-height: 1.04; letter-spacing: -.035em; }
-  #экран-02 .аудитория__шапка h2 em { color: var(--цвет-акцент); font-style: normal; }
-  #экран-02 .аудитория__лид { max-width: 660px; margin: 28px 0 0; font-size: var(--кегль-лид); line-height: 1.45; }
-  #экран-02 .аудитория__фото { grid-area: фото; position: relative; margin: 0; align-self: stretch; min-height: 680px; overflow: hidden; border-radius: var(--радиус-карточки); }
-  #экран-02 .аудитория__фото img { width: 100%; height: 100%; min-height: 680px; display: block; object-fit: cover; object-position: center; }
-  #экран-02 .аудитория__роли { grid-area: список; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(22px, 3vw, 40px); border-top: var(--нить) solid var(--цвет-линия); }
-  #экран-02 .аудитория__роль { position: relative; display: block; margin: 0; padding: 26px 0 26px 24px; background: transparent; border: 0; border-bottom: var(--нить) solid var(--цвет-линия); border-radius: 0; box-shadow: none; }
-  #экран-02 .аудитория__роль::before { content: ""; position: absolute; left: 0; top: 26px; bottom: 26px; width: var(--нить); background: var(--цвет-акцент); }
-  #экран-02 .аудитория__роль--главная { display: block; }
-  #экран-02 .аудитория__роль h3 { margin: 0; font-size: var(--кегль-лид); line-height: 1.2; }
-  #экран-02 .аудитория__роль p { margin: 12px 0 0; color: var(--цвет-текст-мягкий); font-size: var(--кегль-текст); line-height: 1.55; }
-  #экран-02 .аудитория__итог { grid-area: итог; display: grid; grid-template-columns: 8px minmax(0, 1fr); gap: clamp(24px, 4vw, 48px); max-width: 920px; margin: 0 0 0 auto; padding-top: clamp(28px, 4vw, 48px); border-top: var(--нить) solid var(--цвет-линия); }
-  #экран-02 .аудитория__итог::before { content: ""; background: var(--цвет-акцент); }
-  #экран-02 .аудитория__итог p { margin: 0; font-size: var(--кегль-лид); font-weight: 700; line-height: 1.4; }
-  #экран-02.светлый .аудитория__роль { background: transparent; color: var(--цвет-текст); }
-  #экран-02.тёмный .аудитория__роль { background: transparent; color: var(--цвет-тёмный-текст); }
-  #экран-02.светлый .аудитория__роль p { color: var(--цвет-текст-мягкий); }
-  #экран-02.тёмный .аудитория__роль p { color: var(--цвет-тёплый-мягкий); }
-  #экран-02.светлый .аудитория__итог { border-color: var(--цвет-линия); }
-  #экран-02.тёмный .аудитория__итог { border-color: var(--цвет-тёплый-мягкий); }
-  @media (max-width: 899px) {
-    #экран-02 { padding-top: clamp(32px, 7vw, 50px); }
-    #экран-02 .аудитория__макет { grid-template-columns: 1fr; grid-template-areas: "шапка" "фото" "список" "итог"; row-gap: 34px; }
-    #экран-02 .аудитория__шапка h2 { letter-spacing: -.025em; }
-    #экран-02 .аудитория__лид { margin-top: 22px; }
-    #экран-02 .аудитория__фото { width: 100%; min-height: 0; aspect-ratio: 4 / 3; }
-    #экран-02 .аудитория__фото img { min-height: 0; object-position: center 56%; }
-    #экран-02 .аудитория__роли { grid-template-columns: 1fr; }
-    #экран-02 .аудитория__роль, #экран-02 .аудитория__роль--главная { grid-column: auto; display: block; width: auto; margin: 0; padding: 22px 0 22px 20px; }
-    #экран-02 .аудитория__роль:nth-child(2), #экран-02 .аудитория__роль:nth-child(3), #экран-02 .аудитория__роль:nth-child(4) { width: auto; margin-left: 0; }
-    #экран-02 .аудитория__роль--главная p { margin-top: 12px; }
-    #экран-02 .аудитория__роль::before { top: 22px; bottom: 22px; }
-    #экран-02 .аудитория__итог { margin: 0; gap: 20px; }
-  }
-
-/* экран 03 */
-#экран-03 .услуги__шапка { max-width: 850px; margin: 0 0 clamp(30px, 4vw, 54px); text-align: left; }
-  #экран-03 .услуги__шапка h2 { margin: 0; font-size: var(--кегль-h2); line-height: 1.06; }
-  #экран-03 .услуги__шапка .секция__лид { margin: 22px 0 0; font-size: var(--кегль-лид); line-height: 1.4; }
-  #экран-03 .услуги__аудит { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px; align-items: center; padding: clamp(26px, 4vw, 46px); border-radius: var(--радиус-карточки); }
-  #экран-03 .услуги__аудит h3 { margin: 0; font-size: var(--кегль-h2); line-height: 1.1; }
-  #экран-03 .услуги__аудит p { max-width: 680px; margin: 14px 0 0; font-size: var(--кегль-текст); line-height: 1.5; }
-  #экран-03 .услуги__аудит strong { font-size: var(--кегль-цифра); white-space: nowrap; }
-  #экран-03 .услуги__список { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); margin-top: clamp(18px, 2.5vw, 30px); }
-  #экран-03 .услуги__строка { display: flex; flex-direction: column; justify-content: space-between; gap: 26px; min-width: 0; padding: clamp(24px, 3vw, 34px); border: var(--нить) solid; border-radius: var(--радиус-карточки); }
-  #экран-03 .услуги__строка h3 { margin: 0; font-size: var(--кегль-лид); line-height: 1.2; }
-  #экран-03 .услуги__строка p { margin: 12px 0 0; font-size: var(--кегль-текст); line-height: 1.5; }
-  #экран-03 .услуги__цена { font-size: var(--кегль-лид); line-height: 1.2; }
-  #экран-03 .услуги__цена small { font-size: var(--кегль-текст); font-weight: 400; }
-  #экран-03 .услуги__строка--сайт { grid-column: 1 / -1; }
-  #экран-03 .услуги__низ { margin-top: clamp(28px, 4vw, 48px); }
-  #экран-03 .услуги__низ .кнопка { min-height: 78px; justify-content: center; padding: 23px 42px; }
-  #экран-03.светлый .услуги__аудит, #экран-03.тёмный .услуги__аудит { background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
-  #экран-03.светлый .услуги__строка { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-03.тёмный .услуги__строка { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-03.тёмный .услуги__строка h3, #экран-03.тёмный .услуги__строка strong { color: var(--цвет-текст); }
-  #экран-03.светлый .услуги__строка p { color: var(--цвет-текст-мягкий); }
-  #экран-03.тёмный .услуги__строка p { color: var(--цвет-текст-мягкий); }
-  @media (max-width: 899px) {
-    #экран-03 .услуги__список { grid-template-columns: 1fr; }
-    #экран-03 .услуги__строка--сайт { grid-column: auto; }
-    #экран-03 .услуги__аудит { grid-template-columns: 1fr; gap: 16px; }
-    #экран-03 .услуги__низ .кнопка { width: 100%; }
-  }
-
-/* экран 04 */
-#экран-04 { overflow: hidden; }
-  #экран-04 .история__сетка { display: grid; grid-template-columns: minmax(360px, .88fr) minmax(0, 1.12fr); gap: clamp(36px, 4vw, 56px); align-items: stretch; }
-  #экран-04 .история__портрет { position: relative; min-height: 760px; margin: 0; overflow: hidden; border-radius: var(--радиус-карточки); }
-  #экран-04 .история__портрет img { display: block; width: 100%; height: 100%; min-height: 760px; object-fit: cover; object-position: 56% 18%; }
-  #экран-04 .история__портрет::after { content: ""; position: absolute; inset: 0; border: var(--нить) solid; pointer-events: none; }
-  #экран-04 .история__подпись { position: absolute; right: 0; bottom: 0; left: 0; z-index: 1; margin: 0; padding: 20px 26px; font-size: var(--кегль-текст); font-weight: 700; line-height: 1.3; }
-  #экран-04 .история__содержание { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
-  #экран-04 .история__содержание .кикер { margin-bottom: 24px; }
-  #экран-04 .история__содержание h2 { max-width: 700px; margin: 0; font-size: var(--кегль-h2); line-height: 1.08; letter-spacing: -.035em; }
-  #экран-04 .история__лид { max-width: 650px; margin: 30px 0 0; font-size: var(--кегль-лид); line-height: 1.4; font-weight: 600; }
-  #экран-04 .история__текст { max-width: 650px; margin: 24px 0 0; font-size: var(--кегль-текст); line-height: 1.65; }
-  #экран-04 .история__цифры { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 30px; margin-top: clamp(36px, 5vw, 64px); border-top: var(--нить) solid; }
-  #экран-04 .история__факт { min-width: 0; padding: 22px 0 25px; border-bottom: var(--нить) solid; }
-  #экран-04 .история__факт strong { display: block; font-size: var(--кегль-цифра); line-height: 1.12; font-weight: 700; }
-  #экран-04 .история__факт span { display: block; margin-top: 8px; font-size: var(--кегль-текст); line-height: 1.45; }
-  #экран-04.светлый .история__портрет::after { border-color: var(--цвет-акцент); }
-  #экран-04.тёмный .история__портрет::after { border-color: var(--цвет-акцент); }
-  #экран-04.светлый .история__подпись { background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
-  #экран-04.тёмный .история__подпись { background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
-  #экран-04.светлый .история__текст, #экран-04.светлый .история__факт span { color: var(--цвет-текст-мягкий); }
-  #экран-04.тёмный .история__текст, #экран-04.тёмный .история__факт span { color: var(--цвет-тёплый-мягкий); }
-  #экран-04.светлый .история__цифры, #экран-04.светлый .история__факт { border-color: var(--цвет-линия); }
-  #экран-04.тёмный .история__цифры, #экран-04.тёмный .история__факт { border-color: var(--цвет-тёплый-мягкий); }
-  @media (min-width: 900px) {
-    #экран-04 .история__портрет { min-height: 0; aspect-ratio: 2 / 3; align-self: start; }
-    #экран-04 .история__портрет img { min-height: 0; object-fit: cover; object-position: 50% 50%; }
-    #экран-04 .история__подпись { font-size: var(--кегль-текст); line-height: 1.3; }
-    #экран-04 .история__лид { font-size: var(--кегль-лид); line-height: 1.35; }
-    #экран-04 .история__текст { font-size: var(--кегль-текст); line-height: 1.45; }
-    #экран-04 .история__факт span { font-size: var(--кегль-текст); line-height: 1.35; }
-  }
-  @media (min-width: 1200px) {
-    #экран-04 .история__сетка { width: min(calc(100vw - 104px), var(--ширина)); max-width: none; margin-inline: auto; grid-template-columns: minmax(0, .46fr) minmax(0, .54fr); gap: 52px; }
-    #экран-04 .история__портрет { aspect-ratio: 5 / 7; }
-    #экран-04 .история__лид { font-size: var(--кегль-лид); }
-    #экран-04 .история__текст { font-size: var(--кегль-текст); line-height: 1.42; }
-    #экран-04 .история__факт span { font-size: var(--кегль-текст); }
-  }
-  @media (max-width: 899px) {
-    #экран-04 .история__сетка { display: flex; flex-direction: column; gap: 0; }
-    #экран-04 .история__портрет { order: 4; width: 100%; min-height: 0; aspect-ratio: 4 / 3; margin-top: 32px; }
-    #экран-04 .история__портрет img { min-height: 0; object-position: 50% 24%; }
-    #экран-04 .история__содержание { display: contents; }
-    #экран-04 .история__содержание .кикер { margin-bottom: 18px; }
-    #экран-04 .история__содержание .кикер { order: 1; }
-    #экран-04 .история__содержание h2 { order: 2; }
-    #экран-04 .история__лид { order: 3; }
-    #экран-04 .история__лид { margin-top: 22px; }
-    #экран-04 .история__текст { order: 5; margin-top: 28px; }
-    #экран-04 .история__цифры { order: 6; margin-top: 28px; }
-    #экран-04 .история__факт strong { font-size: var(--кегль-h2); }
-  }
-  @media (max-width: 560px) {
-    #экран-04 .история__сетка { gap: 28px; }
-    #экран-04 .история__портрет { aspect-ratio: 1 / 1; }
-    #экран-04 .история__цифры { column-gap: 16px; }
-    #экран-04 .история__факт { padding: 18px 0 20px; }
-  }
-
-/* экран 05 */
-#экран-05 { overflow: hidden; }
-  #экран-05 .витрина__шапка { max-width: 860px; margin: 0 auto 55px; text-align: center; }
-  #экран-05 .витрина__шапка h2 { margin: 14px 0 20px; font-size: var(--кегль-h2); line-height: 1.12; }
-  #экран-05 .витрина__лид { max-width: 670px; margin: 0 auto; font-size: var(--кегль-лид); line-height: 1.5; }
-  #экран-05 .витрина__главные { display: grid; gap: 28px; }
-  #экран-05 .витрина__главный { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); min-height: 400px; border-radius: var(--радиус-карточки); overflow: hidden; }
-  #экран-05 .витрина__главный--обратно { grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); }
-  #экран-05 .витрина__главный--обратно .витрина__кадр { order: 2; }
-  #экран-05 .витрина__кадр { min-width: 0; margin: 0; overflow: hidden; }
-  #экран-05 .витрина__главный--надежда { display: block; min-height: 0; }
-  #экран-05 .витрина__главный--надежда .витрина__кадр { position: relative; width: 100%; aspect-ratio: 4 / 1; }
-  #экран-05 .витрина__кадр img { display: block; width: 100%; height: 100%; max-height: 480px; aspect-ratio: auto; object-fit: cover; object-position: center 18%; }
-  #экран-05 .витрина__главный--надежда .витрина__кадр img { position: absolute; top: -99%; left: -66.4%; width: 218%; max-width: none; height: auto; max-height: none; aspect-ratio: 16 / 9; object-fit: fill; }
-  #экран-05 .витрина__главный--елена { display: block; min-height: 0; }
-  #экран-05 .витрина__главный--елена .витрина__кадр { width: 100%; aspect-ratio: 882 / 410; }
-  #экран-05 .витрина__главный--елена .витрина__кадр img { width: 100%; height: 100%; max-height: none; object-fit: contain; }
-  #экран-05 .витрина__содержание { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; min-width: 0; padding: clamp(28px, 4vw, 54px); }
-  #экран-05 .витрина__метка { display: inline-block; margin-bottom: 20px; padding: 6px 12px; border-radius: 9em; font-size: var(--кегль-кикер); font-weight: 700; }
-  #экран-05 .витрина__содержание h3 { margin: 0 0 14px; font-size: var(--кегль-цифра); line-height: 1.15; }
-  #экран-05 .витрина__содержание p { margin: 0; font-size: var(--кегль-текст); line-height: 1.5; }
-  #экран-05 .витрина__число { display: block; margin-top: 32px; font-size: var(--кегль-h2); font-weight: 700; line-height: 1; }
-  #экран-05 .витрина__итог { display: block; margin-top: 8px; font-size: var(--кегль-лид); line-height: 1.3; }
-  #экран-05 .витрина__дополнение { display: block; margin-top: 20px; padding-top: 18px; border-top: var(--нить) solid; font-size: var(--кегль-текст); line-height: 1.4; }
-  #экран-05 .витрина__подзаголовок { margin: 72px 0 24px; font-size: var(--кегль-цифра); line-height: 1.2; }
-  #экран-05 .витрина__прочие { display: grid; grid-template-columns: minmax(0, 1fr); gap: 42px; }
-  #экран-05 .витрина__работа { min-width: 0; }
-  #экран-05 .витрина__работа figure { width: 100%; max-width: 1400px; aspect-ratio: 1 / 1; margin: 20px auto 0; overflow: hidden; border-radius: var(--радиус-карточки); }
-  #экран-05 .витрина__работа img { display: block; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; object-position: center top; }
-  #экран-05 .витрина__работа--яна img,
-  #экран-05 .витрина__работа--любава img { object-fit: contain; }
-  #экран-05 .витрина__работа--широкая { grid-column: 1 / -1; margin-top: 18px; }
-  #экран-05 .витрина__работа--широкая figure { max-width: none; aspect-ratio: 8 / 5; }
-  #экран-05 .витрина__работа--широкая img { width: 100%; height: 100%; object-fit: contain; }
-  #экран-05 .витрина__работа h3 { margin: 10px 0 8px; font-size: var(--кегль-лид); line-height: 1.25; }
-  #экран-05 .витрина__работа p { margin: 0; font-size: var(--кегль-текст); line-height: 1.45; }
-  #экран-05 .витрина__работа small { display: block; margin-top: 15px; padding-top: 13px; border-top: var(--нить) solid; font-size: var(--кегль-текст); line-height: 1.4; }
-  #экран-05.светлый .витрина__главный { background: var(--цвет-тёмный-фон); color: var(--цвет-тёмный-текст); }
-  #экран-05.тёмный .витрина__главный { background: var(--цвет-тёмный-фон-4); color: var(--цвет-тёмный-текст); }
-  #экран-05.светлый .витрина__метка, #экран-05.тёмный .витрина__метка { background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
-  #экран-05.светлый .витрина__число, #экран-05.тёмный .витрина__число { color: var(--цвет-акцент); }
-  #экран-05.светлый .витрина__дополнение, #экран-05.тёмный .витрина__дополнение { border-color: var(--цвет-акцент); }
-  #экран-05.светлый .витрина__работа small { border-color: var(--цвет-линия); }
-  #экран-05.тёмный .витрина__работа small { border-color: var(--цвет-тёплый-мягкий); }
-  #экран-05.светлый .витрина__лид { color: var(--цвет-текст-мягкий); }
-  #экран-05.тёмный .витрина__лид { color: var(--цвет-тёплый-мягкий); }
-  @media (max-width: 899px) {
-    #экран-05 .витрина__шапка { margin-bottom: 36px; }
-    #экран-05 .витрина__главные { gap: 20px; }
-    #экран-05 .витрина__главный, #экран-05 .витрина__главный--обратно { display: flex; flex-direction: column; min-height: 0; }
-    #экран-05 .витрина__главный--обратно .витрина__кадр { order: 0; }
-    #экран-05 .витрина__кадр { height: 240px; }
-    #экран-05 .витрина__главный--надежда .витрина__кадр { height: auto; aspect-ratio: 3.2 / 1; }
-    #экран-05 .витрина__кадр img { max-height: none; object-position: center 14%; }
-    #экран-05 .витрина__главный--надежда .витрина__кадр img { top: -98%; left: -82%; width: 270%; }
-    #экран-05 .витрина__содержание { padding: 26px; }
-    #экран-05 .витрина__содержание h3 { font-size: var(--кегль-лид); }
-    #экран-05 .витрина__число { margin-top: 20px; }
-    #экран-05 .витрина__подзаголовок { margin-top: 58px; }
-    #экран-05 .витрина__главный--елена .витрина__кадр { height: auto; aspect-ratio: 882 / 410; }
-    #экран-05 .витрина__прочие { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-    #экран-05 .витрина__работа figure { aspect-ratio: 1 / 1; margin-top: 14px; }
-    #экран-05 .витрина__работа h3 { font-size: var(--кегль-текст); }
-    #экран-05 .витрина__работа p { font-size: var(--кегль-текст); }
-    #экран-05 .витрина__работа small { font-size: var(--кегль-мелкий); }
-    #экран-05 .витрина__работа--широкая { display: block; }
-    #экран-05 .витрина__работа--широкая figure { aspect-ratio: 8 / 5; }
-  }
-  @media (max-width: 500px) {
-    #экран-05 .витрина__кадр { height: 210px; }
-    #экран-05 .витрина__работа--широкая figure { aspect-ratio: 8 / 5; }
-  }
-
-/* экран 06 */
-#экран-06 { overflow: hidden; }
-  #экран-06 .отзывы__макет { display: block; }
-  #экран-06 .отзывы__шапка { max-width: 850px; margin: 0 auto clamp(28px, 4vw, 48px); text-align: center; }
-  #экран-06 .отзывы__шапка .кикер { display: flex; justify-content: center; }
-  #экран-06 .отзывы__шапка h2 { margin: 14px 0 24px; font-size: var(--кегль-h2); line-height: 1.08; letter-spacing: -.035em; }
-  #экран-06 .отзывы__шапка h2 em { color: var(--цвет-акцент); font-style: normal; }
-  #экран-06 .отзывы__лента { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-  #экран-06 .отзывы__цитата { position: relative; display: flex; flex-direction: column; width: 100%; margin: 0; padding: 24px; border: var(--нить) solid; border-radius: var(--радиус-карточки); box-shadow: none; }
-  #экран-06 .отзывы__цитата::before { content: "“"; display: block; height: 24px; margin-bottom: 12px; color: var(--цвет-акцент); font-size: var(--кегль-h2); font-weight: 700; line-height: .9; }
-  #экран-06 .отзывы__текст { margin: 0; font-size: var(--кегль-лид); line-height: 1.5; }
-  #экран-06 .отзывы__подпись { display: block; margin-top: auto; padding-top: 18px; border-top: var(--нить) solid; font-size: var(--кегль-текст); line-height: 1.35; }
-  #экран-06 .отзывы__подпись b { font-weight: 700; }
-  #экран-06 .отзывы__ещё { display: none; }
-  #экран-06.светлый .отзывы__цитата { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-06.тёмный .отзывы__цитата { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); border-color: var(--цвет-тёплый-мягкий); }
-  #экран-06.светлый .отзывы__подпись { color: var(--цвет-текст-мягкий); border-color: var(--цвет-линия); }
-  #экран-06.тёмный .отзывы__подпись { color: var(--цвет-тёплый-мягкий); border-color: var(--цвет-тёплый-мягкий); }
-  @media (max-width: 899px) {
-    #экран-06 .отзывы__шапка { max-width: 680px; margin-bottom: 36px; text-align: left; }
-    #экран-06 .отзывы__шапка .кикер { justify-content: flex-start; }
-    #экран-06 .отзывы__шапка h2 { letter-spacing: -.025em; }
-    #экран-06 .отзывы__лента { grid-template-columns: 1fr; gap: 20px; }
-    #экран-06 .отзывы__цитата { padding: 24px; }
-    #экран-06 .отзывы__подпись { margin-top: 26px; }
-    #экран-06 .отзывы__текст { font-size: var(--кегль-текст); }
-    #экран-06 .отзывы__лента.отзывы--свернуты .отзывы__цитата:nth-child(n+4) { display: none; }
-    #экран-06 .отзывы__ещё:not([hidden]) { display: flex; justify-content: center; width: 100%; margin-top: 24px; }
-    #экран-06[data-в-поле="да"] ~ .липкая-кнопка { display: none; }
-  }
-
-/* экран 07 */
-#экран-07 .контакты__шапка { max-width: 900px; margin: 0 0 clamp(32px, 5vw, 64px); text-align: left; }
-  #экран-07 .контакты__шапка h2 { margin: 0; font-size: var(--кегль-h2); line-height: 1.06; }
-  #экран-07 .контакты__шапка .секция__лид { margin: 22px 0 0; font-size: var(--кегль-лид); line-height: 1.45; }
-  #экран-07 .контакты__сетка { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr); gap: clamp(28px, 5vw, 70px); align-items: start; }
-  #экран-07 .контакты__список { display: grid; gap: 14px; }
-  #экран-07 .контакты__способ { display: grid; grid-template-columns: 46px minmax(0, 1fr) 24px; gap: 18px; align-items: center; min-height: 88px; padding: 17px 22px; border: var(--нить) solid; border-radius: var(--радиус-карточки); text-decoration: none; transition: transform var(--длительность) var(--плавность), border-color var(--длительность) var(--плавность); }
-  #экран-07 .контакты__способ:hover, #экран-07 .контакты__способ:focus-visible { transform: translateY(-2px); border-color: var(--цвет-акцент); }
-  #экран-07 .контакты__значок { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--цвет-акцент); color: var(--цвет-на-акценте); }
-  #экран-07 .контакты__значок svg, #экран-07 .контакты__стрелка svg { width: 22px; height: 22px; }
-  #экран-07 .контакты__значок .иконка { color: var(--цвет-на-акценте); }
-  #экран-07 .контакты__подпись { min-width: 0; }
-  #экран-07 .контакты__подпись strong { display: block; font-size: var(--кегль-лид); line-height: 1.2; }
-  #экран-07 .контакты__стрелка { color: var(--цвет-акцент); }
-  #экран-07 .контакты__приглашение { padding: clamp(28px, 4vw, 46px); border: var(--нить) solid; border-radius: var(--радиус-карточки); }
-  #экран-07 .контакты__приглашение h3 { margin: 0; font-size: var(--кегль-лид); line-height: 1.25; }
-  #экран-07 .контакты__приглашение p { margin: 18px 0 0; font-size: var(--кегль-текст); line-height: 1.55; }
-  #экран-07.светлый .контакты__способ, #экран-07.тёмный .контакты__способ { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-07.светлый .контакты__способ:hover, #экран-07.тёмный .контакты__способ:hover, #экран-07.светлый .контакты__способ:focus-visible, #экран-07.тёмный .контакты__способ:focus-visible { border-color: var(--цвет-акцент); }
-  #экран-07.светлый .контакты__приглашение { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-07.тёмный .контакты__приглашение { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); border-color: var(--цвет-тёплый-мягкий); }
-  #экран-07.тёмный .контакты__приглашение h3, #экран-07.тёмный .контакты__приглашение p { color: var(--цвет-тёмный-текст); }
-  @media (max-width: 899px) { #экран-07 .контакты__сетка { grid-template-columns: 1fr; } #экран-07 .контакты__способ { grid-template-columns: 42px minmax(0, 1fr) 20px; gap: 14px; padding: 16px; } #экран-07 .контакты__значок { width: 42px; height: 42px; } }
-
-
-  #экран-05 { overflow: hidden; }
-  #экран-05 .работы__шапка { max-width: 860px; margin: 0 auto 55px; text-align: center; }
-  #экран-05 .работы__шапка h2 { margin: 14px 0 20px; font-size: var(--кегль-h2); line-height: 1.12; }
-  #экран-05 .работы__лид { max-width: 670px; margin: 0 auto; font-size: var(--кегль-лид); line-height: 1.5; }
-  #экран-05 .работы__сетка { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-  #экран-05 .работа { position: relative; display: flex; flex-direction: column; min-width: 0; aspect-ratio: 9 / 13; overflow: hidden; border: var(--нить) solid var(--цвет-тёплый-мягкий); border-radius: var(--радиус-карточки); background: var(--цвет-тёмный-фон-4); color: var(--цвет-тёмный-текст); box-shadow: var(--тень-глубокая); }
-  #экран-05 .работа__кадр { width: 100%; height: 52%; min-height: 0; margin: 0; overflow: hidden; background: var(--цвет-светлый-фон); }
-  #экран-05 .работа__кадр img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-  #экран-05 .работа--яна .работа__кадр img,
-  #экран-05 .работа--любава .работа__кадр img,
-  #экран-05 .работа--брусника .работа__кадр img { object-fit: contain; }
-  #экран-05 .работа__содержание { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 22px; }
-  #экран-05 .работа__метка { display: inline-block; margin-bottom: 14px; padding: 6px 12px; border-radius: 9em; background: var(--цвет-акцент); color: var(--цвет-на-акценте); font-size: var(--кегль-кикер); font-weight: 700; }
-  #экран-05 .работа h3 { margin: 0 0 9px; font-size: var(--кегль-лид); line-height: 1.2; }
-  #экран-05 .работа p { margin: 0; font-size: var(--кегль-текст); line-height: 1.4; }
-  #экран-05 .работа__итог { display: block; width: 100%; margin-top: auto; padding-top: 15px; border-top: var(--нить) solid var(--цвет-тёплый-мягкий); font-size: var(--кегль-мелкий); line-height: 1.4; }
-  #экран-05 .работы__доказательство { max-width: 800px; margin: 38px auto 0; text-align: center; color: var(--цвет-тёплый-мягкий); font-size: var(--кегль-текст); line-height: 1.5; }
-  @media (max-width: 899px) {
-    #экран-05 .работы__шапка { margin-bottom: 36px; }
-    #экран-05 .работы__сетка { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-    #экран-05 .работа__кадр { flex: 0 0 40%; height: auto; }
-    #экран-05 .работа__содержание { padding: 16px; }
-    #экран-05 .работа h3 { font-size: var(--кегль-мелкий); }
-    #экран-05 .работа p { font-size: var(--кегль-лид); }
-    #экран-05 .работа__итог { font-size: var(--кегль-лид); }
-    #экран-05[data-в-поле="да"] ~ .липкая-кнопка { display: none; }
-  }
-  @media (max-width: 500px) {
-    #экран-05 .работы__сетка { gap: 12px; }
-    #экран-05 .работа__содержание { padding: 13px; }
-    #экран-05 .работа__метка { margin-bottom: 9px; padding: 5px 9px; }
-    #экран-05 .работа__итог { padding-top: 10px; }
-  }
-
-
-  #экран-06 { overflow: hidden; }
-  #экран-06 .отзывы__макет { display: block; }
-  #экран-06 .отзывы__шапка { max-width: 850px; margin: 0 auto clamp(28px, 4vw, 48px); text-align: center; }
-  #экран-06 .отзывы__шапка .кикер { display: flex; justify-content: center; }
-  #экран-06 .отзывы__шапка h2 { margin: 14px 0 24px; font-size: var(--кегль-h2); line-height: 1.08; letter-spacing: -.035em; }
-  #экран-06 .отзывы__шапка h2 em { color: var(--цвет-акцент); font-style: normal; }
-  #экран-06 .отзывы__лид { margin: 0; font-size: var(--кегль-лид); line-height: 1.5; }
-  #экран-06 .отзывы__лента { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-  #экран-06 .отзывы__цитата { position: relative; display: flex; flex-direction: column; width: 100%; margin: 0; padding: 24px; border: var(--нить) solid; border-radius: var(--радиус-карточки); box-shadow: none; }
-  #экран-06 .отзывы__цитата::before { content: "“"; display: block; height: 24px; margin-bottom: 12px; color: var(--цвет-акцент); font-size: var(--кегль-h2); font-weight: 700; line-height: .9; }
-  #экран-06 .отзывы__текст { margin: 0; font-size: var(--кегль-лид); line-height: 1.5; }
-  #экран-06 .отзывы__подпись { display: block; margin-top: auto; padding-top: 18px; border-top: var(--нить) solid; font-size: var(--кегль-текст); line-height: 1.35; }
-  #экран-06 .отзывы__подпись b { font-weight: 700; }
-  #экран-06 .отзывы__источник { display: block; margin-top: 4px; font-size: var(--кегль-мелкий); }
-  #экран-06 .отзывы__ещё { display: none; }
-  #экран-06.светлый .отзывы__цитата { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); }
-  #экран-06.тёмный .отзывы__цитата { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); border-color: var(--цвет-тёплый-мягкий); }
-  #экран-06.светлый .отзывы__лид { color: var(--цвет-текст-мягкий); }
-  #экран-06.тёмный .отзывы__лид { color: var(--цвет-тёплый-мягкий); }
-  #экран-06.светлый .отзывы__подпись { color: var(--цвет-текст-мягкий); border-color: var(--цвет-линия); }
-  #экран-06.тёмный .отзывы__подпись { color: var(--цвет-тёплый-мягкий); border-color: var(--цвет-тёплый-мягкий); }
-  #экран-06.тёмный { background: var(--цвет-фон-2); color: var(--цвет-текст); }
-  #экран-06.тёмный .отзывы__шапка h2,
-  #экран-06.тёмный .отзывы__шапка .кикер { color: var(--цвет-текст); }
-  #экран-06.тёмный .отзывы__цитата { background: var(--цвет-фон-карточки); color: var(--цвет-текст); border-color: var(--цвет-линия); box-shadow: var(--тень); }
-  #экран-06.тёмный .отзывы__лид,
-  #экран-06.тёмный .отзывы__подпись { color: var(--цвет-текст-мягкий); border-color: var(--цвет-линия); }
-  @media (max-width: 899px) {
-    #экран-06 .отзывы__шапка { max-width: 680px; margin-bottom: 36px; text-align: left; }
-    #экран-06 .отзывы__шапка .кикер { justify-content: flex-start; }
-    #экран-06 .отзывы__шапка h2 { letter-spacing: -.025em; }
-    #экран-06 .отзывы__лента { grid-template-columns: 1fr; gap: 20px; }
-    #экран-06 .отзывы__цитата { padding: 24px; }
-    #экран-06 .отзывы__подпись { margin-top: 26px; }
-    #экран-06 .отзывы__текст { font-size: var(--кегль-текст); }
-    #экран-06 .отзывы__лента.отзывы--свернуты .отзывы__цитата:nth-child(n+4) { display: none; }
-    #экран-06 .отзывы__ещё:not([hidden]) { display: flex; justify-content: center; width: 100%; margin-top: 24px; }
-    #экран-06[data-в-поле="да"] ~ .липкая-кнопка { display: none; }
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
 <style>
 :root {
-  --шрифт-заголовков: system-ui, -apple-system, 'Segoe UI', sans-serif;  --шрифт-текста: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --шрифт-заголовков: Montserrat, system-ui, sans-serif;  --шрифт-текста: Inter, -apple-system, 'Segoe UI', sans-serif;
   --цвет-фон: #FFFFFF;  --цвет-фон-2: #F4F4F6;  --цвет-фон-карточки: #FFFFFF;
   --цвет-текст: #1A1A1A;  --цвет-текст-мягкий: #555568;  --цвет-текст-тихий: #737382;
   --цвет-акцент: #C0392B;  --цвет-акцент-тёмный: #9D3026;  --цвет-акцент-яркий: #C0392B;  --цвет-на-акценте: #FFFFFF;
@@ -731,15 +48,6 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
   --отступ-секции: clamp(42px, 6vw, 84px);
   --отступ-секции-тихо: clamp(36px, 5vw, 70px);
   --отступ-секции-громко: clamp(52px, 7vw, 100px);
-}
-@media (min-width: 1600px) {
-  :root {
-    --ширина: clamp(1120px, 72vw, 1800px);
-    --кегль-h2: clamp(52px, 3vw, 72px);
-    --кегль-текст: clamp(20px, 1.2vw, 28px);
-    --кегль-лид: clamp(24px, 1.5vw, 34px);
-    --кегль-кикер: clamp(17px, .9vw, 21px);
-  }
 }
 </style>
 <script>
@@ -804,18 +112,13 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
       </ul>
     </div>
     <figure class="картинка картинка--фото картинка--край первый-экран__картинка" style="--лицо-в-кадре: .152">
-      <picture><source media="(max-width: 899px)" srcset="img/089f9165-13a7-4092-a4c3-7c754c534d11-telefon.webp"><img src="img/089f9165-13a7-4092-a4c3-7c754c534d11-telefon.webp" alt="Марина Алексейчева в красном костюме" data-лицо="50,27" width="900" height="1260" fetchpriority="high"></picture>
+      <picture><source media="(max-width: 899px)" srcset="img/089f9165-13a7-4092-a4c3-7c754c534d11-telefon.webp"><img src="img/089f9165-13a7-4092-a4c3-7c754c534d11-telefon.webp" alt="Марина Алексейчева в красном костюме" data-лицо="50,27" fetchpriority="high"></picture>
     </figure>
   </div>
 </section>
 
 <style>
 #экран-01 .пятно { display: none; }
-#экран-01 {
-  --цвет-кнопки: var(--цвет-тёмный-текст);
-  --цвет-на-кнопке: var(--цвет-тёмный-фон);
-  --цвет-кнопки-навёл: var(--цвет-тёмный-текст);
-}
 #экран-01 .шапка {
   position: absolute;
   z-index: 5;
@@ -880,14 +183,15 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
   #экран-01 .кикер--пилюля svg { color: var(--цвет-акцент); }
 }
 </style>
-<section class="блок блок--боль блок--тихо тёмный второй" id="экран-02" data-тип="боль" data-вёрстка="своя">
+<section class="блок блок--боль блок--тихо тёмный второй фон--сетка" id="экран-02" data-тип="боль" data-вёрстка="своя">
+<div class="сетка-текстура" aria-hidden="true"></div>
 <div class="блок__внутри аудитория__макет">
   <header class="секция__шапка аудитория__шапка">
     <h2>Вы хорошо делаете своё дело. <em>Но в интернете этого пока не видно.</em></h2>
     <p class="секция__лид аудитория__лид">В реальной работе вы — сильный специалист. В социальных сетях профессиональный уровень должен быть виден так же ясно.</p>
   </header>
   <figure class="фото аудитория__фото">
-    <img src="img/content-work-scene.webp" alt="Работа над контентом за ноутбуком: рядом телефон и контент-план" width="1086" height="1448" loading="lazy" decoding="async">
+    <img src="img/content-work-scene.webp" alt="Работа над контентом за ноутбуком: рядом телефон и контент-план" loading="eager" decoding="sync" fetchpriority="high">
   </figure>
   <div class="аудитория__роли">
     <article class="роль аудитория__роль аудитория__роль--главная"><h3>Экспертам частной практики</h3><p>Юристам, налоговым консультантам, психологам и врачам, для которых точность формулировок и профессиональный образ напрямую влияют на доверие.</p></article>
@@ -924,7 +228,7 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
 <section class="блок блок--о-себе светлый" id="экран-04" data-тип="о-себе" data-вёрстка="своя">
 <div class="блок__внутри история__сетка">
   <figure class="фото история__портрет">
-    <img src="img/марина-портрет.webp" alt="Портрет Марины Алексейчевой в красном костюме" width="1122" height="1402" loading="lazy" decoding="async">
+    <img src="img/марина-портрет.webp" alt="Портрет Марины Алексейчевой в красном костюме" width="1122" height="1402" loading="eager" decoding="sync" fetchpriority="high">
     <figcaption class="история__подпись">Марина Алексейчева · SMM-стратег</figcaption>
   </figure>
   <div class="история__содержание">
@@ -943,31 +247,28 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
 </section>
 <section class="блок блок--работы тёмный второй" id="экран-05" data-тип="работы" data-вёрстка="своя">
 <div class="блок__внутри">
-  <header class="работы__шапка">
+  <header class="витрина__шапка">
     <p class="кикер">Сделано для клиентов</p>
     <h2>От оформления сообщества до сайта и роста аудитории</h2>
-    <p class="работы__лид">Показываю страницы клиентов, сделанное оформление и только подтверждённые результаты</p>
+    <p class="витрина__лид">Показываю страницы клиентов, сделанное оформление и только подтверждённые результаты</p>
   </header>
-  <div class="работы__сетка">
-    <article class="работа работа--надежда"><figure class="фото работа__кадр"><img src="img/работа-надежда-обложка.webp" alt="Обложка сообщества риелтора Надежды" width="883" height="797" loading="lazy" decoding="async"></figure><div class="работа__содержание"><span class="работа__метка">Продвижение</span><h3>Надежда, риелтор</h3><p>Аудит, переоформление страницы и работа с контентом</p><small class="работа__итог">24 сделки за 12 месяцев</small></div></article>
-    <article class="работа работа--елена"><figure class="фото работа__кадр"><img src="img/elena-clean.webp" alt="Оформление сообщества налогового эксперта Елены" width="882" height="410" loading="lazy" decoding="async"></figure><div class="работа__содержание"><span class="работа__метка">Продвижение</span><h3>Елена, налоговый эксперт</h3><p>Развитие сообщества с нулевой базы</p><small class="работа__итог">668 подписчиков за 5 месяцев с нуля</small></div></article>
-    <article class="работа работа--яна"><figure class="фото работа__кадр"><img src="img/работа-яна.webp" alt="Оформление сообщества психолога Яны для компьютера и телефона" width="1000" height="1000" loading="lazy" decoding="async"></figure><div class="работа__содержание"><span class="работа__метка">Оформление</span><h3>Яна, психолог</h3><p>Обложки, аватар, меню и единый визуальный стиль</p><small class="работа__итог">Готовая визуальная система сообщества</small></div></article>
-    <article class="работа работа--любава"><figure class="фото работа__кадр"><img src="img/работа-любава.webp" alt="Оформление сообщества и витрины услуг Любавы" width="883" height="797" loading="lazy" decoding="async"></figure><div class="работа__содержание"><span class="работа__метка">Оформление</span><h3>Любава</h3><p>Обложки, аватар, меню и&nbsp;карточки услуг</p><small class="работа__итог">Единое оформление сообщества и витрины услуг</small></div></article>
-    <article class="работа работа--брусника"><figure class="фото работа__кадр"><img src="img/brusnika-site.webp" alt="Первый экран действующего сайта кафе «Брусника»" width="1440" height="900" loading="lazy" decoding="async"></figure><div class="работа__содержание"><span class="работа__метка">Сайт</span><h3>Кафе «Брусника»</h3><p>Онлайн-меню, QR-код и регистрация гостей</p><small class="работа__итог">Действующее цифровое меню для гостей кафе</small></div></article>
+  <div class="витрина__главные">
+    <article class="витрина__главный витрина__главный--надежда">
+      <figure class="фото витрина__кадр"><img src="img/работа-надежда-обложка.webp" alt="Обложка сообщества риелтора Надежды с её портретом и именем" width="1920" height="1080" loading="eager" decoding="sync"></figure>
+      <div class="витрина__содержание"><span class="витрина__метка">Продвижение</span><h3>Надежда, риелтор</h3><p>Аудит, переоформление страницы и работа с контентом</p><strong class="витрина__число">24 сделки</strong><span class="витрина__итог">за 12 месяцев</span><span class="витрина__дополнение">Общая аудитория — 4 627 человек</span></div>
+    </article>
+    <article class="витрина__главный витрина__главный--обратно витрина__главный--елена">
+      <figure class="фото витрина__кадр"><img src="img/elena-clean.webp" alt="Обложка и карточка сообщества налогового эксперта Елены без панелей браузера и управления" width="882" height="410" loading="eager" decoding="sync"></figure>
+      <div class="витрина__содержание"><span class="витрина__метка">Продвижение</span><h3>Елена, налоговый эксперт</h3><p>Развитие сообщества с нулевой базы</p><strong class="витрина__число">668</strong><span class="витрина__итог">подписчиков за 5 месяцев с нуля</span></div>
+    </article>
   </div>
-  <p class="работы__доказательство">Показаны реальные клиентские работы; исходные изображения и отзывы сохранены.</p>
+  <h3 class="витрина__подзаголовок">Оформление и сайт</h3>
+  <div class="витрина__прочие">
+    <article class="витрина__работа витрина__работа--яна"><span class="витрина__метка">Оформление</span><h3>Яна, психолог</h3><p>Обложки, аватар, меню и единый визуальный стиль</p><figure class="фото"><img src="img/работа-яна.webp" alt="Оформление сообщества психолога Яны для компьютера и телефона" width="1000" height="1000" loading="eager" decoding="sync"></figure></article>
+    <article class="витрина__работа витрина__работа--любава"><span class="витрина__метка">Оформление</span><h3>Любава</h3><p>Обложки, аватар, меню и карточки услуг</p><figure class="фото"><img src="img/работа-любава.webp" alt="Оформление сообщества и витрины услуг Любавы" width="1000" height="1000" loading="eager" decoding="sync"></figure></article>
+    <article class="витрина__работа витрина__работа--широкая"><span class="витрина__метка">Сайт</span><h3>Кафе «Брусника»</h3><p>Онлайн-меню, QR-код и регистрация гостей</p><figure class="фото"><img src="img/brusnika-site.webp" alt="Первый экран действующего сайта кафе «Брусника»: меню без спешки и фотография кафе" width="1440" height="900" loading="eager" decoding="sync"></figure></article>
+  </div>
 </div>
-<script>
-  (() => {
-    const экран = document.getElementById('экран-05');
-    if (!экран || !('IntersectionObserver' in window)) return;
-    const наблюдатель = new IntersectionObserver(([запись]) => {
-      if (запись.isIntersecting) экран.setAttribute('data-в-поле', 'да');
-      else экран.removeAttribute('data-в-поле');
-    });
-    наблюдатель.observe(экран);
-  })();
-</script>
 </section>
 <section class="блок блок--отзывы блок--тихо тёмный фон--зерно" id="экран-06" data-тип="отзывы" data-вёрстка="своя">
 <div class="блок__внутри" data-направление="узнаю-себя">
@@ -979,48 +280,35 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
     <div class="отзывы__лента">
       <blockquote class="отзывы__цитата">
         <p class="отзывы__текст">Вы не просто прошлись по оформлению, а увидели логику сообщества: голос, позиционирование, первые работающие форматы и риски роста. Разбор получился не формальный, а действительно полезный.</p>
-        <footer class="отзывы__подпись"><b>Дмитрий</b><span class="отзывы__источник">Из личной переписки</span></footer>
+        <footer class="отзывы__подпись"><b>Дмитрий</b></footer>
       </blockquote>
       <blockquote class="отзывы__цитата">
         <p class="отзывы__текст">Сделала все очень качественно, указала на слабые и сильные стороны, посмотрела статистику, и подсказала что и как лучше сделать. Очень благодарна, теперь я знаю над чем работать.</p>
-        <footer class="отзывы__подпись"><b>Инна</b><span class="отзывы__источник">Из личной переписки</span></footer>
+        <footer class="отзывы__подпись"><b>Инна</b></footer>
       </blockquote>
       <blockquote class="отзывы__цитата">
         <p class="отзывы__текст">Наша группа ВК стала живой и активной! Всё профессионально, качественно и креативно!</p>
-        <footer class="отзывы__подпись"><b>Светлана</b><span class="отзывы__источник">Из личной переписки</span></footer>
+        <footer class="отзывы__подпись"><b>Светлана</b></footer>
       </blockquote>
       <blockquote class="отзывы__цитата">
         <p class="отзывы__текст">Вы не просто выполняете задачи, вы действительно «чувствуете» нашу аудиторию и находите крутые решения. Каждый пост, каждая кампания — видно, что вы подходите к делу с душой. Очень ценю вашу инициативность и готовность экспериментировать.</p>
-        <footer class="отзывы__подпись"><b>Елена</b><span class="отзывы__источник">Из личной переписки</span></footer>
+        <footer class="отзывы__подпись"><b>Елена</b></footer>
       </blockquote>
       <blockquote class="отзывы__цитата">
         <p class="отзывы__текст">Особенно оценила брендбук и его возможности, всё чётко структурировано. Отдельно хотелось бы отметить поддержку в работе сообщества.</p>
-        <footer class="отзывы__подпись"><b>Яна</b><span class="отзывы__источник">Из личной переписки</span></footer>
+        <footer class="отзывы__подпись"><b>Яна</b></footer>
       </blockquote>
       <blockquote class="отзывы__цитата">
         <p class="отзывы__текст">Провела глубокий аудит страницы, предложила стратегию продвижения с учётом моей аудитории и целей бизнеса. Особенно хочется отметить твою креативность и качество исполнения.</p>
-        <footer class="отзывы__подпись"><b>Любава</b><span class="отзывы__источник">Из личной переписки</span></footer>
+        <footer class="отзывы__подпись"><b>Любава</b></footer>
       </blockquote>
     </div>
-    <button class="кнопка кнопка--вторичная отзывы__ещё" type="button" aria-expanded="false" hidden>Показать ещё 3 отзыва</button>
   </div>
 </div>
 <script>
   (() => {
     const экран = document.getElementById('экран-06');
-    if (!экран) return;
-    const лента = экран.querySelector('.отзывы__лента');
-    const кнопка = экран.querySelector('.отзывы__ещё');
-    if (лента && кнопка) {
-      лента.classList.add('отзывы--свернуты');
-      кнопка.hidden = false;
-      кнопка.addEventListener('click', () => {
-        const свёрнуто = лента.classList.toggle('отзывы--свернуты');
-        кнопка.setAttribute('aria-expanded', String(!свёрнуто));
-        кнопка.textContent = свёрнуто ? 'Показать ещё 3 отзыва' : 'Свернуть отзывы';
-      });
-    }
-    if (!('IntersectionObserver' in window)) return;
+    if (!экран || !('IntersectionObserver' in window)) return;
     const наблюдатель = new IntersectionObserver(([запись]) => {
       if (запись.isIntersecting) экран.setAttribute('data-в-поле', 'да');
       else экран.removeAttribute('data-в-поле');
@@ -1042,20 +330,20 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
   <path d="M9 15l6-6"/>
   <path d="M8 13l-2 2a3.5 3.5 0 0 0 5 5l2-2"/>
   <path d="M16 11l2-2a3.5 3.5 0 0 0-5-5l-2 2"/>
-</svg></span><span class="контакты__подпись"><strong>Написать во ВКонтакте</strong></span><span class="контакты__стрелка" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+</svg></span><span class="контакты__подпись"><strong>Личная страница VK</strong><span class="контакты__адрес">vk.ru/marinaicq</span></span><span class="контакты__стрелка" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M4 12h15M13 6l6 6-6 6"/>
 </svg></span></a>
       <a class="контакты__способ" href="https://t.me/marina08aleks"><span class="контакты__значок" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/>
   <path d="M9 13l10-8"/>
-</svg></span><span class="контакты__подпись"><strong>Написать в Телеграме</strong></span><span class="контакты__стрелка" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+</svg></span><span class="контакты__подпись"><strong>Telegram</strong><span class="контакты__адрес">@marina08aleks</span></span><span class="контакты__стрелка" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M4 12h15M13 6l6 6-6 6"/>
 </svg></span></a>
       <a class="контакты__способ" href="https://max.ru/u/f9LHodD0cOKnXDn9_OZGBEBeg9fRebX2Kk2NG4IygEe5i8zvRgSJxxsokJc"><span class="контакты__значок" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M9 15l6-6"/>
   <path d="M8 13l-2 2a3.5 3.5 0 0 0 5 5l2-2"/>
   <path d="M16 11l2-2a3.5 3.5 0 0 0-5-5l-2 2"/>
-</svg></span><span class="контакты__подпись"><strong>Написать в Максе</strong></span><span class="контакты__стрелка" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+</svg></span><span class="контакты__подпись"><strong>MAX</strong><span class="контакты__адрес">Написать в MAX</span></span><span class="контакты__стрелка" aria-hidden="true"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M4 12h15M13 6l6 6-6 6"/>
 </svg></span></a>
     </div>
@@ -1086,4 +374,3 @@ body, .светлый { --фон-ключа: var(--цвет-фон); --фон-2-
 </script>
 </body>
 </html>
-
