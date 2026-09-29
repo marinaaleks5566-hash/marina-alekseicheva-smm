@@ -1803,8 +1803,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05 .работы__шапка h2 { margin: 14px 0 20px; font-size: var(--кегль-h2); line-height: 1.12; }
   #экран-05 .работы__лид { max-width: 670px; margin: 0 auto; font-size: var(--кегль-лид); line-height: 1.5; }
   #экран-05 .работы__сетка { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-  #экран-05 .работа { position: relative; display: flex; flex-direction: column; min-width: 0; aspect-ratio: 9 / 13; overflow: hidden; border: var(--нить) solid var(--цвет-тёплый-мягкий); border-radius: var(--радиус-карточки); background: var(--цвет-тёмный-фон-4); color: var(--цвет-тёмный-текст); box-shadow: var(--тень-глубокая); }
-  #экран-05 .работа__кадр { position: relative; inset: auto; z-index: auto; width: 100%; height: 52%; min-height: 0; margin: 0; overflow: hidden; background: var(--цвет-светлый-фон); }
+  #экран-05 .работа { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: var(--нить) solid var(--цвет-тёплый-мягкий); border-radius: var(--радиус-карточки); background: var(--цвет-тёмный-фон-4); color: var(--цвет-тёмный-текст); box-shadow: var(--тень-глубокая); }
+  #экран-05 .работа__кадр { position: relative; inset: auto; z-index: auto; width: 100%; height: auto; min-height: 0; margin: 0; overflow: hidden; background: var(--цвет-светлый-фон); }
   #экран-05 .работа__кадр img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   #экран-05 .работа--яна .работа__кадр img,
   #экран-05 .работа--любава .работа__кадр img,
@@ -1815,6 +1815,10 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05 .работа p { margin: 0; font-size: var(--кегль-текст); line-height: 1.4; }
   #экран-05 .работа__итог { display: block; width: 100%; margin-top: auto; padding-top: 15px; border-top: var(--нить) solid var(--цвет-тёплый-мягкий); font-size: var(--кегль-мелкий); line-height: 1.4; }
   #экран-05 .работы__доказательство { max-width: 800px; margin: 38px auto 0; text-align: center; color: var(--цвет-тёплый-мягкий); font-size: var(--кегль-текст); line-height: 1.5; }
+  @media (min-width: 900px) {
+    #экран-05 .работа { aspect-ratio: 9 / 13; }
+    #экран-05 .работа__кадр { height: 52%; }
+  }
   @media (max-width: 899px) {
     #экран-05 .работы__шапка { margin-bottom: 36px; }
     #экран-05 .работы__сетка { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
