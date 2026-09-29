@@ -1821,16 +1821,18 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-05 .работа { aspect-ratio: auto; }
     #экран-05 .работа__кадр { flex: none; height: auto; aspect-ratio: 4 / 3; }
     #экран-05 .работа__содержание { padding: 16px; }
-    #экран-05 .работа h3 { font-size: var(--кегль-мелкий); }
-    #экран-05 .работа p { font-size: var(--кегль-лид); }
-    #экран-05 .работа__итог { font-size: var(--кегль-лид); }
+    #экран-05 .работа h3 { font-size: var(--кегль-лид); }
+    #экран-05 .работа p { font-size: var(--кегль-текст); }
+    #экран-05 .работа__итог { font-size: var(--кегль-текст); }
     #экран-05[data-в-поле="да"] ~ .липкая-кнопка { display: none; }
   }
-  @media (max-width: 500px) {
-    #экран-05 .работы__сетка { gap: 12px; }
-    #экран-05 .работа__содержание { padding: 13px; }
-    #экран-05 .работа__метка { margin-bottom: 9px; padding: 5px 9px; }
-    #экран-05 .работа__итог { padding-top: 10px; }
+  @media (max-width: 639px) {
+    #экран-05 .работы__сетка { grid-template-columns: 1fr; gap: 20px; }
+    #экран-05 .работа__кадр { aspect-ratio: auto; }
+    #экран-05 .работа__кадр img { height: auto; aspect-ratio: auto; object-fit: contain; }
+    #экран-05 .работа__содержание { padding: 20px; }
+    #экран-05 .работа__метка { margin-bottom: 12px; padding: 5px 10px; }
+    #экран-05 .работа__итог { padding-top: 14px; }
   }
 
 /* экран 06 */
