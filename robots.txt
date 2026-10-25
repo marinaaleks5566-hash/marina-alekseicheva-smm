@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://marinaaleks5566-hash.github.io/marina-alekseicheva-smm/sitemap.xml
