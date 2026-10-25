@@ -1871,7 +1871,11 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05 .работа { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: var(--нить) solid var(--цвет-тёплый-мягкий); border-radius: var(--радиус-карточки); background: color-mix(in srgb, var(--цвет-тёмный-фон-2) 82%, var(--цвет-тёмный-текст)); color: var(--цвет-тёмный-текст); box-shadow: var(--тень-глубокая); }
   #экран-05 .работа::before, #экран-05 .работа::after { content: none; }
   #экран-05 .работа__кадр { position: relative; inset: auto; z-index: auto; display: flex; align-items: center; width: 100%; height: auto; min-height: 0; margin: 0; overflow: hidden; border-radius: var(--радиус-карточки); background: var(--цвет-тёмный-фон-2); box-shadow: none; }
-  #экран-05 .работа__кадр img { display: block; width: 100%; height: auto; max-height: 100%; aspect-ratio: auto; object-fit: contain; object-position: center; }
+  #экран-05 .работа__кадр img { display: block; width: 100%; height: auto; max-height: 100%; object-fit: contain; object-position: center; }
+  #экран-05 .работа--надежда img, #экран-05 .работа--любава img { aspect-ratio: 883 / 797; }
+  #экран-05 .работа--елена img { aspect-ratio: 882 / 410; }
+  #экран-05 .работа--яна img { aspect-ratio: 1; }
+  #экран-05 .работа--брусника img { aspect-ratio: 1440 / 900; }
   #экран-05 .работа__содержание { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 22px; }
   #экран-05 .работа__метка { display: inline-block; margin-bottom: 14px; padding: 6px 12px; border-radius: 9em; background: var(--цвет-акцент); color: var(--цвет-на-акценте); font-size: var(--кегль-кикер); font-weight: 700; }
   #экран-05 .работа h3 { margin: 0 0 9px; font-size: var(--кегль-лид); line-height: 1.2; }
