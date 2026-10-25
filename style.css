@@ -1889,6 +1889,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
     #экран-05 .работы__сетка { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
     #экран-05 .работа { aspect-ratio: auto; }
     #экран-05 .работа__кадр { flex: none; height: auto; aspect-ratio: 4 / 3; }
+    #экран-05 .работа__кадр img { height: auto; aspect-ratio: 4 / 3; }
     #экран-05 .работа__содержание { padding: 16px; }
     #экран-05 .работа h3 { font-size: var(--кегль-лид); }
     #экран-05 .работа p { font-size: var(--кегль-текст); }
@@ -1897,8 +1898,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   }
   @media (max-width: 639px) {
     #экран-05 .работы__сетка { grid-template-columns: 1fr; gap: 20px; }
-    #экран-05 .работа__кадр { aspect-ratio: auto; }
-    #экран-05 .работа__кадр img { height: auto; aspect-ratio: auto; object-fit: contain; }
+    #экран-05 .работа__кадр { aspect-ratio: 4 / 3; }
+    #экран-05 .работа__кадр img { height: auto; aspect-ratio: 4 / 3; object-fit: contain; }
     #экран-05 .работа__содержание { padding: 20px; }
     #экран-05 .работа__метка { margin-bottom: 12px; padding: 5px 10px; }
     #экран-05 .работа__итог { padding-top: 14px; }
